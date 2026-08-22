@@ -447,8 +447,19 @@ module SOTO
         UIName = UI_trait_shooter,
         UIDescription = UI_trait_shooterdesc,
         XPBoosts = Aiming=1;Reloading=1,
-        MutuallyExclusiveTraits = soto:expshooter;base:pacifist;soto:pacifist2,
+        MutuallyExclusiveTraits = soto:expshooter;base:pacifist;soto:pacifist2;soto:shooter2,
     }	
+
+    character_trait_definition soto:shooter2
+    {
+        IsProfessionTrait = true,
+        DisabledInMultiplayer = false,
+        CharacterTrait = soto:shooter2,
+        Cost = 0,
+        UIName = UI_trait_shooter,
+        UIDescription = UI_trait_shooterdesc,
+        MutuallyExclusiveTraits = soto:expshooter;base:pacifist;soto:pacifist2;soto:shooter,
+    }
 
     character_trait_definition soto:expshooter
     {
@@ -459,7 +470,7 @@ module SOTO
         UIName = UI_trait_expshooter,
         UIDescription = UI_trait_expshooterdesc,
         XPBoosts = Aiming=2;Reloading=2,
-        MutuallyExclusiveTraits = soto:shooter;base:pacifist;soto:pacifist2,
+        MutuallyExclusiveTraits = soto:shooter;soto:shooter2;base:pacifist;soto:pacifist2,
     }		
     
     character_trait_definition soto:hunter2
