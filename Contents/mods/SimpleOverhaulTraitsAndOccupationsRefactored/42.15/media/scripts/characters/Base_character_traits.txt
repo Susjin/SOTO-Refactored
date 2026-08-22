@@ -72,7 +72,7 @@ module Base
 		UIName = UI_trait_athletic,
 		UIDescription = UI_trait_athleticdesc,
 		XPBoosts = Fitness=4,
-		MutuallyExclusiveTraits = base:overweight;base:fit;base:obese;base:out of shape;base:unfit;base:very underweight;soto:slack,
+		MutuallyExclusiveTraits = base:overweight;base:fit;base:obese;base:out of shape;base:unfit;base:very underweight;base:smoker;soto:slack,
 	}	
 	/* OUT OF SHAPE */
 	character_trait_definition base:out of shape
@@ -275,7 +275,6 @@ module Base
 	}
 
 	/* CRAFTING TRAITS */
-
 	character_trait_definition base:firstaid
 	{
 		IsProfessionTrait = false,
@@ -333,7 +332,6 @@ module Base
 		UIName = UI_trait_handy,
 		UIDescription = UI_trait_handydesc,
 		XPBoosts = Carving=1;Maintenance=1;Masonry=1;Woodwork=1,
-
 		GrantedRecipes = BarbedWireWeapon;BoltBat;MakeBrakeWeapon;MakeBucketMaul;CanReinforceLongWeapon;CanReinforceShortWeapon;CanReinforceWeapon;MakeGardenForkHeadWeapon;MakeKettleMaul;RailspikeBaseballBat;MakeRailspikeCudgel;MakeRailspikeIronPipe;MakeRailspikeLongHandle;MakeRailspikeWeapon;MakeRakeHeadWeapon;MakeSawPlank;MakeSawbladeCudgel;MakeSawbladeLongHandle;MakeSawbladePlank;MakeSawbladeTableLeg;MakeSawbladeWeapon;SheetMetalWeapon;MakeSpadeHeadCudgel;MakeScrewdriver,
 		MutuallyExclusiveTraits = soto:handy2,
 	}	
@@ -343,12 +341,12 @@ module Base
 		IsProfessionTrait = false,
 		DisabledInMultiplayer = false,
 		CharacterTrait = base:blacksmith,
-		Cost = 2,
+		Cost = 3,
 		UIName = UI_trait_Blacksmith,
 		UIDescription = UI_trait_BlacksmithDesc,
 		XPBoosts = Blacksmith=1,
-		GrantedRecipes = Advanced_Forge;Blast_Furnace;Charcoal_Burner;Construct_Charcoal_Pit;Construct_Dome_Kiln;Forge;Construct_Makeshift_Electric_Blower_Forge;Smelting_Furnace;Forge_Primitive_Forge;Primitive_Furnace;Forge_Baking_Pan;Forge_Baking_Tray;Forge_Bucket;Forge_Ball_Peen_Hammer_Head;Forge_Clawhammer_Head;Forge_Cooking_Pot;Forge_Corkscrew;Forge_Crowbar;Forge_Crude_Shortsword_Blade;Forge_Crude_Sword_Blade;Forge_Door_Knob;Forge_Fine_Butter_Knives;Forge_Fine_Forks;Forge_Fine_Spoons;Forge_Fishing_Hooks;Forge_Forceps;Forge_Forks;Forge_Frying_Pan;Forge_Garden_Hoe_Head;Forge_Gardening_Trowel;Forge_Hand_Scythe_Head;Forge_Hinge;Forge_Hunting_Knife_Blade;Forge_Kettle;Forge_Kitchen_Knife_Blade;Forge_Large_Knife_Blade;Forge_Machete_Blade;Forge_Masons_Chisel;Forge_Masons_Trowel;Forge_Meat_Cleaver_Blade;Forge_Metalworking_Chisel;Forge_Metalworking_Pliers;Forge_Metalworking_Punch;Forge_File;Forge_Drill;Forge_Nails;Forge_Needle;Forge_Pick_Axe_Head;Forge_Railroad_Spike_Knife;Forge_Roasting_Pan;Forge_Saucepan;Forge_Saw;Forge_Scissors;Forge_Scythe_Head;Forge_Spade_Head;Forge_Sheep_Shears;Forge_Sledgehammer_Head;Forge_Small_Knife;Forge_Small_Steel_Sheet;Forge_Smithing_Hammer_Head;Forge_Spoons;Forge_Steel_Sheet;Forge_Straight_Razor;Forge_Sword_Blade;Forge_ShortSword_Blade;Forge_Tongs;Forge_Tweezers;Make_Metal_Drum;MakeCrudeWhetstone;Forge_Heading_Tool;Forge_Draw_Plate;ForgeMaceHead;MakeSpikedClub;ForgeSpearHead;ForgeLongSpearHead;Forge_Wood_Axe_Head;Forge_Old_Axe_Head;Forge_Hand_Axe_Head;Forge_Fleshing_Tool;Forge_Goblets;Forge_Cup;Forge_Buckle;Forge_Lantern;Forge_Carpentry_Chisel;Forge_Wrench,
 		MutuallyExclusiveTraits = base:blacksmith2,
+		GrantedRecipes = Advanced_Forge;Blast_Furnace;Charcoal_Burner;Construct_Charcoal_Pit;Construct_Dome_Kiln;Forge;Construct_Makeshift_Electric_Blower_Forge;Smelting_Furnace;Forge_Primitive_Forge;Primitive_Furnace;Forge_Baking_Pan;Forge_Baking_Tray;Forge_Bucket;Forge_Ball_Peen_Hammer_Head;Forge_Clawhammer_Head;Forge_Cooking_Pot;Forge_Corkscrew;Forge_Crowbar;Forge_Crude_Shortsword_Blade;Forge_Crude_Sword_Blade;Forge_Door_Knob;Forge_Fine_Butter_Knives;Forge_Fine_Forks;Forge_Fine_Spoons;Forge_Fishing_Hooks;Forge_Forceps;Forge_Forks;Forge_Frying_Pan;Forge_Garden_Hoe_Head;Forge_Gardening_Trowel;Forge_Hand_Scythe_Head;Forge_Hinge;Forge_Hunting_Knife_Blade;Forge_Kettle;Forge_Kitchen_Knife_Blade;Forge_Large_Knife_Blade;Forge_Machete_Blade;Forge_Masons_Chisel;Forge_Masons_Trowel;Forge_Meat_Cleaver_Blade;Forge_Metalworking_Chisel;Forge_Metalworking_Pliers;Forge_Metalworking_Punch;Forge_File;Forge_Drill;Forge_Nails;Forge_Needle;Forge_Pick_Axe_Head;Forge_Railroad_Spike_Knife;Forge_Roasting_Pan;Forge_Saucepan;Forge_Saw;Forge_Scissors;Forge_Scythe_Head;Forge_Spade_Head;Forge_Sheep_Shears;Forge_Sledgehammer_Head;Forge_Small_Knife;Forge_Small_Steel_Sheet;Forge_Smithing_Hammer_Head;Forge_Spoons;Forge_Steel_Sheet;Forge_Straight_Razor;Forge_Sword_Blade;Forge_ShortSword_Blade;Forge_Tongs;Forge_Tweezers;Make_Metal_Drum;MakeCrudeWhetstone;Forge_Heading_Tool;Forge_Draw_Plate;ForgeMaceHead;MakeSpikedClub;ForgeSpearHead;ForgeLongSpearHead;Forge_Wood_Axe_Head;Forge_Old_Axe_Head;Forge_Hand_Axe_Head;Forge_Fleshing_Tool;Forge_Goblets;Forge_Cup;Forge_Buckle;Forge_Lantern;Forge_Carpentry_Chisel;Forge_Wrench,
 	}
 	character_trait_definition base:blacksmith2
 	{
@@ -442,7 +440,7 @@ module Base
 		IsProfessionTrait = false,
 		DisabledInMultiplayer = false,
 		CharacterTrait = base:brawler,
-		Cost = 5,
+		Cost = 3,
 		UIName = UI_trait_BarFighter,
 		UIDescription = UI_trait_BarFighterDesc2,
 		XPBoosts = Strength=1,
@@ -645,7 +643,7 @@ module Base
 		Cost = 3,
 		UIName = UI_trait_brave,
 		UIDescription = UI_trait_bravedesc,
-		MutuallyExclusiveTraits = base:cowardly;base:desensitized;soto:desensitized2,
+		MutuallyExclusiveTraits = base:cowardly;base:agoraphobic;base:claustrophobic;base:desensitized;soto:desensitized2,
 	}
 
 	character_trait_definition base:cowardly
@@ -737,7 +735,7 @@ module Base
 		Cost = -4,
 		UIName = UI_trait_agoraphobic,
 		UIDescription = UI_trait_agoraphobicdesc,
-		MutuallyExclusiveTraits = base:brave;base:desensitized;soto:desensitized2;base:claustrophobic;base:hiker;base:outdoorsman;soto:outdoorsman2;,
+		MutuallyExclusiveTraits = base:adrenalinejunkie;base:brave;base:desensitized;base:claustrophobic;base:hiker;base:outdoorsman;soto:outdoorsman2;soto:desensitized2,
 	}
 
 	character_trait_definition base:claustrophobic
@@ -909,7 +907,7 @@ module Base
 		IsProfessionTrait = false,
 		DisabledInMultiplayer = false,
 		CharacterTrait = base:allthumbs,
-		Cost = -2,
+		Cost = -5,
 		UIName = UI_trait_AllThumbs,
 		UIDescription = UI_trait_AllThumbsDesc2,
 		MutuallyExclusiveTraits = base:dextrous;soto:dextrous2,

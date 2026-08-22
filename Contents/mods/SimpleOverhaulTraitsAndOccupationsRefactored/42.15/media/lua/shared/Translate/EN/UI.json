@@ -23,6 +23,7 @@
     "UI_trait_pronetoillnessDesc2": "More prone to disease. May accidentally catch a cold.<br>Faster rate of zombification.<br>(+25% zombification speed, +70% chance of catching a cold,<br>+20% cold strength, +50% cold progression speed,<br>has a negligible chance of catching a cold while outside.)",
     "UI_trait_HemophobicDesc2": "Panic when performing first aid on self.<br>Cannot perform first aid on others.<br>Gets stressed and unhappy when covered in blood.",
     "UI_trait_PacifistDesc2": "Decreases combat XP gains.<br>(-25% XP for all weapon skills, Maintenance skill and Aiming skill.)",
+    "UI_trait_PlaysBaseballDesc": "Used to play baseball. Has better experience with long weapons",
     "UI_trait_sneaky": "Sneaky",
     "UI_trait_sneakydesc": "",
     "UI_trait_lightfooted": "Lightfooted",

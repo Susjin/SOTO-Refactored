@@ -27,6 +27,7 @@
     "UI_trait_pronetoillnessDesc2": "Mais propenso a doenças. Pode pegar resfriado acidentalmente.<br>Zombificação mais rápida.<br>(+25% velocidade de zombificação, +70% chance de resfriado,<br>+20% força do resfriado, +50% progressão do resfriado,<br>chance mínima de resfriado ao ar livre.)",
     "UI_trait_HemophobicDesc2": "Pânico ao fazer primeiros socorros em si mesmo.<br>Não pode fazer primeiros socorros em outros.<br>Fica estressado e infeliz quando coberto de sangue.",
     "UI_trait_PacifistDesc2": "Reduz ganho de XP de combate.<br>(-25% XP para todas as habilidades de arma, Manutenção e Mira.)",
+    "UI_trait_PlaysBaseballDesc": "Era jogador de baseball. Possui melhor experiência com armas longas.",
     "UI_trait_sneaky": "Furtivo",
     "UI_trait_sneakydesc": "",
     "UI_trait_lightfooted": "Passo Leve",

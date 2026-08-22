@@ -157,6 +157,43 @@ Here are listed all the changes and additions this mod does to traits and profes
 - Increased remaining points: 8 >> 10
 
 
+### Traits
+#### Positive
+##### Artisan
+- Disabled
+
+##### Athletic
+- Increased points cost: 10 >> 12
+
+##### Blacksmith Knowledge
+- Decreased points cost: 6 >> 3
+- Changed skill levels:
+  - Blacksmith: 2 >> 1
+  - Maintenance: 1 >> 0
+
+##### Brave
+- Decreased points cost: 4 >> 3
+
+##### Brawler
+- Decreased points cost: 6 >> 3
+- Changed skill levels:
+  - Strength: 0 >> 1
+  - Long Blunt: 1 >> 0
+  - Axe: 1 >> 0
+
+
+#### Negative
+##### All Thumbs
+- Increased given points: 2 >> 5
+
+##### Short of Breath
+- Increased given points: 5 >> 6
+- Mutually Exclusive:
+  - SOTO: Tireless
+
+
+
+
 ## Changes applied to default SOTO
 
 ### Professions
