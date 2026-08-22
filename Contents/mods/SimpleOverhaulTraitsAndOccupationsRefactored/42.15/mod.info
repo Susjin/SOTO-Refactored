@@ -1,6 +1,13 @@
-name=Simple Overhaul: Traits and Occupations (SOTO)
-id=SimpleOverhaulTraitsAndOccupations
-modversion=1
-pzversion=42
-description=This global mod changes traits and occupations from vanilla game, also adds new ones.
-poster=poster.png
+name=Simple Overhaul: Traits and Occupations (SOTO) - Refactored
+id=SimpleOverhaulTraitsAndOccupationsRefactored
+description=This global mod changes traits and occupations from vanilla game, also adds new ones. Refactored for the Build 42 and optimized code.
+icon=icon.png
+author=hea, peteR
+
+modversion=1.0.0
+versionMin=42.20
+category=features
+
+url=https://github.com/Susjin/SOTO-Refactored
+
+poster=posters/poster.png
