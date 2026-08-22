@@ -54,8 +54,6 @@ SOTO.CharacterTrait.GENERATOR_EXPERT = CharacterTrait.register("soto:generatorex
 SOTO.CharacterTrait.GENERATOR_EXPERT2 = CharacterTrait.register("soto:generatorexpert2")
 SOTO.CharacterTrait.CALMMINDED = CharacterTrait.register("soto:calmminded")
 SOTO.CharacterTrait.MARATHON_RUNNER = CharacterTrait.register("soto:marathonrunner")
---SOTO.CharacterTrait.NINJAWAY = CharacterTrait.register("soto:ninjaway")
---SOTO.CharacterTrait.NINJAWAY2 = CharacterTrait.register("soto:ninjaway2")
 SOTO.CharacterTrait.BREATHING_TECHNIQUE = CharacterTrait.register("soto:breathingtechnique")
 SOTO.CharacterTrait.BREATHING_TECHNIQUE2 = CharacterTrait.register("soto:breathingtechnique2")
 SOTO.CharacterTrait.TIRELESS = CharacterTrait.register("soto:tireless")
@@ -102,7 +100,6 @@ SOTO.CharacterTrait.REFUELLER = CharacterTrait.register("soto:refueller")
 SOTO.CharacterTrait.CUTTING_TOOLS = CharacterTrait.register("soto:cuttingtools")
 SOTO.CharacterTrait.COMMERCIAL_DRIVER = CharacterTrait.register("soto:commercialdriver")
 SOTO.CharacterTrait.FRAGILE_HEALTH = CharacterTrait.register("soto:fragilehealth")
---SOTO.CharacterTrait.SNORER = CharacterTrait.register("soto:snorer")	
 SOTO.CharacterTrait.FORMER_ALCOHOLIC = CharacterTrait.register("soto:formeralcoholic")
 SOTO.CharacterTrait.FORMER_SMOKER = CharacterTrait.register("soto:formersmoker")
 
@@ -137,15 +134,15 @@ SOTO.CharacterProfession.CRIMINAL = CharacterProfession.register("soto:criminal"
 SOTO.CharacterProfession.ANIMAL_CONTROL_OFFICER = CharacterProfession.register("soto:animalcontrolofficer")
 SOTO.CharacterProfession.HUNTSMAN = CharacterProfession.register("soto:huntsman")
 SOTO.CharacterProfession.VETERINARIAN = CharacterProfession.register("soto:veterinarian")
-	
-	
---	CharacterTrait.WHITTLER:getName()
---	SOTO.CharacterTrait.WHITTLER:getName()
 
---   SOTO.CharacterProfession.SMITHER:getName()
 
---CharacterTrait.register("soto:enjoytheride")	
+--TODO: Get these traits working
+--Advanced foraging and Improved foraging are doing nothing, need to get them working.
+
+--CharacterTrait.register("soto:enjoytheride")
 --CharacterTrait.register("soto:heavyaxemybeloved")
---CharacterTrait.register("soto:demostronggrip")
 --CharacterTrait.register("soto:minersendurance")
+--SOTO.CharacterTrait.SNORER = CharacterTrait.register("soto:snorer")
+--SOTO.CharacterTrait.NINJAWAY = CharacterTrait.register("soto:ninjaway")
+--SOTO.CharacterTrait.NINJAWAY2 = CharacterTrait.register("soto:ninjaway2")
 
