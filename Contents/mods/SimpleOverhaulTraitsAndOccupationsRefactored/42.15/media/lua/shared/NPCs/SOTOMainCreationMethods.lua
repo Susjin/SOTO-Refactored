@@ -62,8 +62,8 @@ SOTOBaseGameCharacterDetails.DoNewCharacterInitializations = function(playernum,
 		player:getCharacterTraits():add(CharacterTrait.DEXTROUS);
 	end
 	
-	if player:hasTrait(SOTO.CharacterTrait.INVENTIVE2) then
-		player:getCharacterTraits():remove(SOTO.CharacterTrait.INVENTIVE2);
+	if player:hasTrait(CharacterTrait.INVENTIVE_PROF) then
+		player:getCharacterTraits():remove(CharacterTrait.INVENTIVE_PROF);
 		player:getCharacterTraits():add(CharacterTrait.INVENTIVE);
 	end		
 	if player:hasTrait(SOTO.CharacterTrait.GENERATOR_EXPERT2) then
@@ -78,8 +78,8 @@ SOTOBaseGameCharacterDetails.DoNewCharacterInitializations = function(playernum,
 		player:getCharacterTraits():remove(SOTO.CharacterTrait.STRONG_BACK2);
 		player:getCharacterTraits():add(SOTO.CharacterTrait.STRONG_BACK);
 	end	
-	if player:hasTrait(SOTO.CharacterTrait.HERBALIST2) then
-		player:getCharacterTraits():remove(SOTO.CharacterTrait.HERBALIST2);
+	if player:hasTrait(CharacterTrait.HERBALIST_PROF) then
+		player:getCharacterTraits():remove(CharacterTrait.HERBALIST_PROF);
 		player:getCharacterTraits():add(CharacterTrait.HERBALIST);
 	end		
 	if player:hasTrait(CharacterTrait.COOK2) then

@@ -252,13 +252,13 @@ function SOAddTraitsByLvl(player, perk, perkLevel)
 		end
 	end	
 
-	-- MASONRY
+	-- MASON
 	if perk == Perks.Masonry then
-		-- Add Masonry
-		if SOTOSbvars.CraftTraitsObtainable == true and perkLevel >= 6 and not player:hasTrait(SOTO.CharacterTrait.MASONRY) then
-			player:getCharacterTraits():add(SOTO.CharacterTrait.MASONRY);
+		-- Add Mason
+		if SOTOSbvars.CraftTraitsObtainable == true and perkLevel >= 6 and not player:hasTrait(CharacterTrait.MASON) then
+			player:getCharacterTraits():add(CharacterTrait.MASON);
 			SOaddExpBoost(player, Perks.Masonry, 1);
-			HaloTextHelper.addTextWithArrow(player, getText("UI_trait_masonry"), true, HaloTextHelper.getColorGreen());
+			HaloTextHelper.addTextWithArrow(player, getText("UI_trait_Mason"), true, HaloTextHelper.getColorGreen());
 		end
 	end			
 	
@@ -274,7 +274,7 @@ function SOAddTraitsByLvl(player, perk, perkLevel)
 	
 	-- GLASSMAKING
 	if perk == Perks.Glassmaking then
-		-- Add Masonry
+		-- Add Glassmaking
 		if SOTOSbvars.CraftTraitsObtainable == true and perkLevel >= 6 and not player:hasTrait(SOTO.CharacterTrait.GLASSBLOWER) then
 			player:getCharacterTraits():add(SOTO.CharacterTrait.GLASSBLOWER);
 			SOaddExpBoost(player, Perks.Glassmaking, 1);

@@ -61,7 +61,7 @@ module SOTO
 		UIDescription = UI_profdesc_botanist,
 		IconPathName = profession_botanist,
 		XPBoosts = Farming=1;PlantScavenging=2,
-		GrantedTraits = soto:herbalist2;soto:advancedforaging,
+		GrantedTraits = base:herbalist_prof;soto:advancedforaging,
 		GrantedRecipes = MakeFliesCureFromCigarettes;MakeFliesCureFromLooseTobacco;MakeFliesCureFromChewingTobacco;MakeMildewCure;MakeAphidsCure;Carrot Growing Season;Broccoli Growing Season;Radish Growing Season;Strawberry Growing Season;Tomato Growing Season;Potato Growing Season;Cabbage Growing Season;Corn Growing Season;Kale Growing Season;Sweet Potato Growing Season;Green Pea Growing Season;Onion Growing Season;Garlic Growing Season;Soybean Growing Season;Basil Growing Season;Chives Growing Season;Cilantro Growing Season;Oregano Growing Season;Parsley Growing Season;Sage Growing Season;Rosemary Growing Season;Thyme Growing Season;Hops Growing Season;Sugar Beet Growing Season;Bell Pepper Growing Season;Cauliflower Growing Season;Cucumber Growing Season;Habanero Growing Season;Jalapeno Growing Season;Leek Growing Season;Lettuce Growing Season;Pumpkin Growing Season;Spinach Growing Season;Sunflower Growing Season;Turnip Growing Season;Watermelon Growing Season;Zucchini Growing Season;Chamomile Growing Season;Lemongrass Growing Season;Marigold Growing Season;Mint Growing Season;Black Sage Growing Season;Broadleaf Plantain Growing Season;Comfrey Growing Season;Common Mallow Growing Season;Wild Garlic Growing Season;Rose Growing Season;Poppy Growing Season;Lavender Growing Season,
 	}		
 	

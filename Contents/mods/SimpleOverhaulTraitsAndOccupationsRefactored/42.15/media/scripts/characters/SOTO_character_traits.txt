@@ -184,17 +184,6 @@ module SOTO
         UIDescription = UI_trait_advancedforagingdesc,
     }
 
-    character_trait_definition soto:inventive2
-    {
-        IsProfessionTrait = true,
-        DisabledInMultiplayer = false,
-        CharacterTrait = soto:inventive2,
-        Cost = 0,
-        UIName = UI_trait_Inventive,
-        UIDescription = UI_trait_InventiveDesc,
-        MutuallyExclusiveTraits = base:inventive,
-    }
-
     character_trait_definition soto:firstaid2
     {
         IsProfessionTrait = true,
@@ -273,18 +262,6 @@ module SOTO
         UIName = UI_trait_metalwelder,
         UIDescription = UI_trait_metalwelderdesc,
         XPBoosts = MetalWelding=1,
-    }
-
-    character_trait_definition soto:masonry
-    {
-        IsProfessionTrait = false,
-        DisabledInMultiplayer = false,
-        CharacterTrait = soto:masonry,
-        Cost = 1,
-        UIName = UI_trait_masonry,
-        UIDescription = UI_trait_masonrydesc,
-        XPBoosts = Masonry=1,
-        GrantedRecipes = Advanced_Forge;Blast_Furnace;Construct_Dome_Kiln;Forge;Smelting_Furnace;Forge_Primitive_Forge;Primitive_Furnace,
     }
 
     character_trait_definition soto:potter
@@ -493,17 +470,6 @@ module SOTO
         UIName = UI_trait_Scout,
         UIDescription = UI_trait_Scout2Desc,
         MutuallyExclusiveTraits = base:formerscout,
-    }	
-
-    character_trait_definition soto:herbalist2
-    {
-        IsProfessionTrait = true,
-        DisabledInMultiplayer = false,
-        CharacterTrait = soto:herbalist2,
-        Cost = 0,
-        UIName = UI_trait_Herbalist,
-        UIDescription = UI_trait_HerbalistDesc,
-        MutuallyExclusiveTraits = base:herbalist,
     }	
 
     character_trait_definition soto:generatorexpert
