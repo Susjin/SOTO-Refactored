@@ -402,17 +402,6 @@ module SOTO
         XPBoosts = LongBlade=1,
     }	
 
-    character_trait_definition soto:durability
-    {
-        IsProfessionTrait = false,
-        DisabledInMultiplayer = false,
-        CharacterTrait = soto:durability,
-        Cost = 3,
-        UIName = UI_trait_durability,
-        UIDescription = UI_trait_durabilitydesc,
-        XPBoosts = Maintenance=1,
-    }	
-
     /* FIREARM TRAITS */
 
     character_trait_definition soto:shooter

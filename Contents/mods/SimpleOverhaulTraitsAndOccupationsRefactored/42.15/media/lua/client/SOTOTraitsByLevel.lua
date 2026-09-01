@@ -336,11 +336,11 @@ function SOAddTraitsByLvl(player, perk, perkLevel)
 	
 	-- MAINTENANCE
 	if perk == Perks.Maintenance then
-		-- Add DURABILITY if maintenance 6+
-		if SOTOSbvars.CombatTraitsObtainable == true and perkLevel >= 6 and not player:hasTrait(SOTO.CharacterTrait.DURABILITY) then
-			player:getCharacterTraits():add(SOTO.CharacterTrait.DURABILITY);
+		-- Add Tinkerer if maintenance 6+
+		if SOTOSbvars.CombatTraitsObtainable == true and perkLevel >= 6 and not player:hasTrait(CharacterTrait.TINKERER) then
+			player:getCharacterTraits():add(CharacterTrait.TINKERER);
 			SOaddExpBoost(player, Perks.Maintenance, 1);
-			HaloTextHelper.addTextWithArrow(player, getText("UI_trait_durability"), true, HaloTextHelper.getColorGreen());
+			HaloTextHelper.addTextWithArrow(player, getText("UI_trait_tinkerer"), true, HaloTextHelper.getColorGreen());
 		end
 	end		
 	
