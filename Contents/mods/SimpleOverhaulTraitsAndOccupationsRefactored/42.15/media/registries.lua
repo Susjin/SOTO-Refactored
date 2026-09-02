@@ -8,8 +8,6 @@ SOTO.CharacterProfession = {}
 
 SOTO.CharacterTrait.TAUT = CharacterTrait.register("soto:taut")
 SOTO.CharacterTrait.SLACK = CharacterTrait.register("soto:slack")
-SOTO.CharacterTrait.FAST_METABOLISM = CharacterTrait.register("soto:fastmetabolism")
-SOTO.CharacterTrait.SLOW_METABOLISM = CharacterTrait.register("soto:slowmetabolism")
 SOTO.CharacterTrait.SNEAKY = CharacterTrait.register("soto:sneaky")
 SOTO.CharacterTrait.LIGHTFOOTED = CharacterTrait.register("soto:lightfooted")
 SOTO.CharacterTrait.AGILE = CharacterTrait.register("soto:agile")

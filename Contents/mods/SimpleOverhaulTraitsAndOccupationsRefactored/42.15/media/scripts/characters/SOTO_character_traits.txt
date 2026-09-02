@@ -25,28 +25,6 @@ module SOTO
         MutuallyExclusiveTraits = soto:taut;base:athletic;base:strong,
     }
     
-    character_trait_definition soto:fastmetabolism
-    {
-        IsProfessionTrait = true,
-        DisabledInMultiplayer = false,
-        CharacterTrait = soto:fastmetabolism,
-        Cost = 0,
-        UIName = UI_trait_fastmetabolism,
-        UIDescription = UI_trait_fastmetabolismdesc,
-        MutuallyExclusiveTraits = soto:slowmetabolism,
-    }	
-    
-    character_trait_definition soto:slowmetabolism
-    {
-        IsProfessionTrait = true,
-        DisabledInMultiplayer = false,
-        CharacterTrait = soto:slowmetabolism,
-        Cost = 0,
-        UIName = UI_trait_slowmetabolism,
-        UIDescription = UI_trait_slowmetabolismdesc,
-        MutuallyExclusiveTraits = soto:fastmetabolism,
-    }		
-
     character_trait_definition soto:sensitivedigestion
     {
         IsProfessionTrait = false,
