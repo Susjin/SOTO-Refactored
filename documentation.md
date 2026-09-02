@@ -380,12 +380,6 @@ Here are listed all the changes and additions this mod does to traits and profes
 ##### Weak Stomach
 - Decreased points given: 2 >> 1
 
-##### Fast Metabolism
-- Increased points given: 2 >> 4
-
-##### Slow Metabolism
-- Increased points given: 2 >> 4
-
 ---
 
 ## Changes applied to default SOTO
