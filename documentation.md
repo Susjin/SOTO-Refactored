@@ -156,9 +156,11 @@ Here are listed all the changes and additions this mod does to traits and profes
 #### Unemployed
 - Increased remaining points: 8 >> 10
 
+---
 
 ### Traits
 #### Positive
+
 ##### Artisan
 - Disabled
 
@@ -181,20 +183,225 @@ Here are listed all the changes and additions this mod does to traits and profes
   - Long Blunt: 1 >> 0
   - Axe: 1 >> 0
 
+##### Cat's Eyes
+- Decreased points cost: 3 >> 2
 
+##### Eagle Eyed
+- Decreased points cost: 4 >> 3
+
+##### Fast Healer
+- Decreased points cost: 6 >> 4
+
+##### Fast Learner
+- Increased points cost: 6 >> 7
+
+##### Fast Reader
+- Decreased points cost: 2 >> 1
+
+##### First Aider
+- Decreased points cost: 2 >> 1
+
+##### Angler
+- Decreased points cost: 4 >> 2
+
+##### Gardener
+- Decreased points cost: 2 >> 1
+
+##### Graceful
+- Decreased points cost: 4 >> 2
+
+##### Gymnast
+- Mutually Exclusive:
+  - Base: Clumsy
+
+##### Herbalist
+- Decreased points cost: 4 >> 2
+- Changed skill levels:
+  - Foraging: 1 >> 0
+
+##### Hiker
+- Increased points cost: 5 >> 6
+- Changed skill levels:
+  - Fishing: 0 >> 1
+
+##### Low Thirst
+- Increased points cost: 2 >> 3
+
+##### Hunter
+- Increased points cost: 8 >> 9
+- Changed skill levels:
+  - Butchering: 1 >> 0
+  - Tracking: 0 >> 1
+
+##### Inconspicuous
+- Decreased points cost: 4 >> 2
+
+##### Inventive
+- Decreased points cost: 2 >> 1
+
+##### Iron Gut
+- Decreased points cost: 2 >> 1
+
+##### Runner
+- Decreased points cost: 4 >> 2
+- Mutually Exclusive:
+  - Base: Out of Shape
+  - Base: Unfit
+  - Base: Short of Breath
+
+##### Runner
+- Decreased points cost: 4 >> 2
+- Mutually Exclusive:
+  - Base: Out of Shape
+  - Base: Unfit
+  - Base: Short of Breath
+
+##### Keen Hearing
+- Decreased points cost: 6 >> 5
+
+##### Mason
+- Decreased points cost: 2 >> 1
+- Changed skill levels:
+  - Masonry: 2 >> 1
+
+##### Nutricionist
+- Decreased points cost: 2 >> 1
+
+##### Resilient
+- Decreased points cost: 4 >> 2
+
+##### Former Scout
+- Decreased points cost: 6 >> 5
+
+##### Sewer
+- Decreased points cost: 4 >> 2
+
+##### Thick-skinned
+- Decreased points cost: 8 >> 6
+
+
+##### Tinkerer
+- Decreased points cost: 4 >> 3
+
+##### Target Shooter
+- Decreased points cost: 5 >> 3
+
+##### Vehicle Knowledge
+- Decreased points cost: 3 >> 2
+- Changed skill levels:
+  - Mechanics: 1 >> 0
+- Just gives all recipes
+
+##### Wakeful
+- Increased points cost: 3 >> 4
+
+##### Wakeful
+- Decreased points cost: 2 >> 1
+
+---
 #### Negative
+
 ##### All Thumbs
-- Increased given points: 2 >> 5
+- Increased points given: 2 >> 5
 
 ##### Short of Breath
-- Increased given points: 5 >> 6
+- Increased points given: 5 >> 6
 - Mutually Exclusive:
+  - Base: Runner
   - SOTO: Tireless
 
+##### Hard of Hearing
+- Increased points given: 4 >> 5
 
+##### Hemophobic
+- Increased points given: 5 >> 6
 
+##### High Thirst
+- Increased points given: 2 >> 3
+
+##### Illiterate
+- Increased points given: 10 >> 12
+
+##### Obese
+- No longer a passive trait
+- Increased points given: 0 >> 10
+
+##### Outdoorsman
+- Mutually Exclusive:
+  - Base: Agoraphobic
+
+##### Out of Shape
+- Mutually Exclusive:
+  - Base: Runner
+
+##### High Weight
+- No longer a passive trait
+- Increased points given: 0 >> 6
+
+##### Short Sighted
+- Increased points given: 2 >> 4
+
+##### Slow Healer
+- Increased points given: 3 >> 5
+
+##### Slow Reader
+- Decreased points given: 2 >> 1
+
+##### Slow Learner
+- Increased points given: 6 >> 7
+
+##### Smoker
+- Increased points given: 3 >> 6
+- Mutually Exclusive:
+  - Base: Athletic
+
+##### Sunday Driver
+- Increased points given: 1 >> 2
+
+##### Thin-skinned
+- Increased points given: 6 >> 8
+
+##### Low Weight
+- No longer a passive trait
+- Increased points given: 0 >> 6
+
+##### Very Low Weight
+- No longer a passive trait
+- Increased points given: 0 >> 10
+
+##### Unfit
+- Increased points given: 10 >> 12
+- Mutually Exclusive:
+  - Base: Runner
+
+##### Puny
+- Increased points given: 10 >> 12
+
+##### Weak Stomach
+- Decreased points given: 2 >> 1
+
+##### Fast Metabolism
+- Increased points given: 2 >> 4
+
+##### Slow Metabolism
+- Increased points given: 2 >> 4
+
+---
 
 ## Changes applied to default SOTO
 
 ### Professions
 #### Delivery-man
+
+
+### Traits
+#### Positive
+
+##### Durability
+- Removed
+
+##### Inventive (Profession)
+- Removed
+
+##### Herbalist (Profession)
+- Removed
