@@ -381,7 +381,35 @@ Here are listed all the changes and additions this mod does to traits and profes
 ## Changes applied to default SOTO
 
 ### Professions
+
+#### Botanist
+- Increased remaining points: 1 >> 4
+
+#### Dancer
+- Increased remaining points: -3 >> -1
+
 #### Delivery-man
+- Increased remaining points: -2 >> 0
+
+#### Detective
+- Increased remaining points: -1 >> 3
+
+#### Janitor
+- Changed skill levels:
+  - Nimble: 0 >> 1
+
+#### Loader
+- Increased remaining points: -2 >> 0
+
+#### Soldier
+- Increased remaining points: -6 >> -5
+- Granted Trait: Marksman
+
+#### Weightlifting Intructor
+- Increased remaining points: -9 >> -6
+- Granted Trait: Marksman
+
+
 
 
 ### Traits
