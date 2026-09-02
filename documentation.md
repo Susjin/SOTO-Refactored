@@ -387,6 +387,18 @@ Here are listed all the changes and additions this mod does to traits and profes
 ### Traits
 #### Positive
 
+##### Desensitized
+- Increased points cost: 8 >> 10
+
+##### Bludgeoner
+- Decreased points cost: 3 >> 2
+
+##### Sharpshooter
+- Granted Trait: Marksman
+
+##### Sneaky
+- Decreased points cost: 2 >> 1
+
 ##### Durability
 - Removed
 
@@ -395,3 +407,22 @@ Here are listed all the changes and additions this mod does to traits and profes
 
 ##### Herbalist (Profession)
 - Removed
+
+##### Tireless 
+- Mutually Exclusive:
+  - Out of Shape
+
+
+#### Negative
+
+##### Alcoholic
+- Increased points given: 5 >> 6
+
+##### Depressive
+- Increased points given: 3 >> 5
+
+##### Nyctophobic
+- Increased points given: 1 >> 2
+
+##### Sensitive Digestion
+- Increased points given: 2 >> 3
