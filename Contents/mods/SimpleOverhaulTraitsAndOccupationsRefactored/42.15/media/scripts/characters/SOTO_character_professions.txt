@@ -4,10 +4,10 @@ module SOTO
 	/* SOTO OCCUPATIONS */
 	
 	/* DELIVERYMAN */
-	character_profession_definition soto:deliveryman
+	character_profession_definition soto:deliveryman  /* DONE */
 	{
 		CharacterProfession = soto:deliveryman,
-		Cost = -2,
+		Cost = 0,
 		UIName = UI_prof_deliveryman,
 		UIDescription = UI_profdesc_deliveryman,
 		IconPathName = profession_deliveryman,
@@ -16,10 +16,10 @@ module SOTO
 	}
 	
 	/* LOADER */
-	character_profession_definition soto:loader
+	character_profession_definition soto:loader  /* DONE */
 	{
 		CharacterProfession = soto:loader,
-		Cost = -2,
+		Cost = 0,
 		UIName = UI_prof_loader,
 		UIDescription = UI_profdesc_loader,
 		IconPathName = profession_loader,
@@ -28,7 +28,7 @@ module SOTO
 	}
 
 	/* TRUCK DRIVER */
-	character_profession_definition soto:truckdriver
+	character_profession_definition soto:truckdriver  /* DONE */
 	{
 		CharacterProfession = soto:truckdriver,
 		Cost = 4,
@@ -41,22 +41,22 @@ module SOTO
 	}
 
 	/* SOLDIER */
-	character_profession_definition soto:soldier
+	character_profession_definition soto:soldier  /* DONE */
 	{
 		CharacterProfession = soto:soldier,
-		Cost = -6,
+		Cost = -5,
 		UIName = UI_prof_soldier,
 		UIDescription = UI_profdesc_soldier,
 		IconPathName = profession_soldier,
 		XPBoosts = Strength=1;Fitness=1;Reloading=2;Aiming=2;SmallBlade=1,
-		GrantedTraits = base:nightowl;soto:improvedforaging,
+		GrantedTraits = base:marksman;base:nightowl;soto:improvedforaging,
 	}	
 	
 	/* BOTANIST */
-	character_profession_definition soto:botanist
+	character_profession_definition soto:botanist  /* DONE */
 	{
 		CharacterProfession = soto:botanist,
-		Cost = 1,
+		Cost = 4,
 		UIName = UI_prof_botanist,
 		UIDescription = UI_profdesc_botanist,
 		IconPathName = profession_botanist,
@@ -66,7 +66,7 @@ module SOTO
 	}		
 	
 	/* GRAVEDIGGER */
-	character_profession_definition soto:gravedigger
+	character_profession_definition soto:gravedigger  /* DONE */
 	{
 		CharacterProfession = soto:gravedigger,
 		Cost = -2,
@@ -78,10 +78,10 @@ module SOTO
 	}	
 	
 	/* DANCER */
-	character_profession_definition soto:dancer
+	character_profession_definition soto:dancer  /* DONE */
 	{
 		CharacterProfession = soto:dancer,
-		Cost = -3,
+		Cost = -1,
 		UIName = UI_prof_dancer,
 		UIDescription = UI_profdesc_dancer,
 		IconPathName = profession_dancer,
@@ -90,7 +90,7 @@ module SOTO
 	}		
 	
 	/* PRIEST */
-	character_profession_definition soto:priest
+	character_profession_definition soto:priest  /* DONE */
 	{
 		CharacterProfession = soto:priest,
 		Cost = 14,
@@ -102,10 +102,10 @@ module SOTO
 	}	
 	
 	/* WEIGHTLIFTING INSTRUCTOR */
-	character_profession_definition soto:weightliftinginstructor
+	character_profession_definition soto:weightliftinginstructor  /* DONE */
 	{
 		CharacterProfession = soto:weightliftinginstructor,
-		Cost = -9,
+		Cost = -6,
 		UIName = UI_prof_weightliftinginstructor,
 		UIDescription = UI_profdesc_weightliftinginstructor,
 		IconPathName = profession_weightliftinginstructor,
@@ -114,10 +114,10 @@ module SOTO
 	}	
 	
 	/* DETECTIVE */
-	character_profession_definition soto:detective
+	character_profession_definition soto:detective  /* DONE */
 	{
 		CharacterProfession = soto:detective,
-		Cost = -1,
+		Cost = 3,
 		UIName = UI_prof_detective,
 		UIDescription = UI_profdesc_detective,
 		IconPathName = profession_detective,
@@ -127,7 +127,7 @@ module SOTO
 	}	
 	
 	/* SCHOOL TEACHER */
-	character_profession_definition soto:schoolteacher
+	character_profession_definition soto:schoolteacher  /* DONE */
 	{
 		CharacterProfession = soto:schoolteacher,
 		Cost = 8,
@@ -139,14 +139,14 @@ module SOTO
 	}	
 	
 	/* JANITOR */
-	character_profession_definition soto:janitor
+	character_profession_definition soto:janitor  /* DONE */
 	{
 		CharacterProfession = soto:janitor,
 		Cost = 2,
 		UIName = UI_prof_janitor,
 		UIDescription = UI_profdesc_janitor,
 		IconPathName = profession_janitor,
-		XPBoosts = Spear=1;Maintenance=1,
+		XPBoosts = Spear=1;Maintenance=1;Nimble=1,
 		GrantedTraits = soto:improvedforaging,
 	}	
 	
