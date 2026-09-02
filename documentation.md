@@ -17,8 +17,7 @@ Here are listed all the changes and additions this mod does to traits and profes
 - New granted trait: Dextrous
 
 #### Carpenter
-- Changed skill levels:
-  - Maintenance: 1 >> 0
+- Decreased remaining points: -2 >> -3
 - New granted trait: Handy
 
 #### Chef
@@ -78,8 +77,6 @@ Here are listed all the changes and additions this mod does to traits and profes
 
 #### Lumberjack
 - Decreased remaining points: 0 >> -4
-- Changed skill levels:
-  - Maintenance: 1 >> 0
 - New granted trait: Strong Grip
 - New granted trait: Improved Foraging (WIP)
 
@@ -168,10 +165,9 @@ Here are listed all the changes and additions this mod does to traits and profes
 - Increased points cost: 10 >> 12
 
 ##### Blacksmith Knowledge
-- Decreased points cost: 6 >> 3
+- Decreased points cost: 6 >> 4
 - Changed skill levels:
   - Blacksmith: 2 >> 1
-  - Maintenance: 1 >> 0
 
 ##### Brave
 - Decreased points cost: 4 >> 3

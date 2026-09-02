@@ -28,10 +28,10 @@ module Base
 	character_profession_definition base:carpenter
 	{
 		CharacterProfession = base:carpenter,
-		Cost = -2,
+		Cost = -3,
 		UIName = UI_prof_Carpenter,
 		IconPathName = profession_hammer2,
-		XPBoosts = Woodwork=4;Carving=1;SmallBlunt=1;Masonry=1,
+		XPBoosts = Woodwork=4;Carving=1;SmallBlunt=1;Masonry=1;Maintenance=1,
 		GrantedTraits = soto:handy2,
 		GrantedRecipes = MakeBrakeWeapon;CanReinforceLongWeapon;CanReinforceShortWeapon;CanReinforceWeapon;MakeGardenForkHeadWeapon;RailspikeBaseballBat;MakeRailspikeCudgel;MakeRailspikeLongHandle;MakeRakeHeadWeapon;MakeSawPlank;MakeSawbladeCudgel;MakeSawbladeLongHandle;MakeSawbladePlank;MakeSawbladeTableLeg;MakeSawbladeWeapon;SheetMetalWeapon;MakeSpadeHeadCudgel;MakeAdvancedFramepackFrame;MakeAdvancedLargeFramepackFrame,
 	}
@@ -153,7 +153,7 @@ module Base
 		UIName = UI_prof_Lumberjack,
 		UIDescription = UI_profdesc_lumberjack,
 		IconPathName = profession_lumberjack,
-		XPBoosts = Axe=2;Strength=1,
+		XPBoosts = Axe=2;Strength=1;Maintenance=1,
 		GrantedTraits = base:axeman;soto:improvedforaging;soto:stronggrip2,
 	}
 	
