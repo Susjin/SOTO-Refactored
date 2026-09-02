@@ -1856,10 +1856,10 @@ function caloriestraits()
 	-- adjusting calories
 	-- callories when sleeping	
 	if player:isAsleep() then
-		if player:hasTrait(SOTO.CharacterTrait.SLOW_METABOLISM) and weight <= 90 then -- Gain weight faster when below 90 weight
+		if player:hasTrait(CharacterTrait.WEIGHT_GAIN) and weight <= 90 then -- Gain weight faster when below 90 weight
 			player:getNutrition():setCalories(currcalories + (CalSleeping * CalMod))
 		end
-		if player:hasTrait(SOTO.CharacterTrait.FAST_METABOLISM) and weight >= 70 then -- Losing weight faster when weight over 70
+		if player:hasTrait(CharacterTrait.WEIGHT_LOSS) and weight >= 70 then -- Losing weight faster when weight over 70
 			player:getNutrition():setCalories(currcalories - (CalSleeping * CalMod))
 		end		
 	end
@@ -1867,40 +1867,40 @@ function caloriestraits()
 	if not player:isAsleep() then
 		-- callories when idling	
 		if not player:isPlayerMoving() then
-			if player:hasTrait(SOTO.CharacterTrait.SLOW_METABOLISM) and weight <= 90 then -- Gain weight faster when below 90 weight
+			if player:hasTrait(CharacterTrait.WEIGHT_GAIN) and weight <= 90 then -- Gain weight faster when below 90 weight
 				player:getNutrition():setCalories(currcalories + (CalIdling * CalMod))
 			end
-			if player:hasTrait(SOTO.CharacterTrait.FAST_METABOLISM) and weight >= 70 then -- Losing weight faster when weight over 70
+			if player:hasTrait(CharacterTrait.WEIGHT_LOSS) and weight >= 70 then -- Losing weight faster when weight over 70
 				player:getNutrition():setCalories(currcalories - (CalIdling * CalMod))
 			end		
 		end	
 
 		-- callories when walking		
 		if player:isPlayerMoving() and player:IsRunning() == false and player:isSprinting() == false then
-			if player:hasTrait(SOTO.CharacterTrait.SLOW_METABOLISM) and weight <= 90 then -- Gain weight faster when below 90 weight
+			if player:hasTrait(CharacterTrait.WEIGHT_GAIN) and weight <= 90 then -- Gain weight faster when below 90 weight
 				player:getNutrition():setCalories(currcalories + (CalWalking * CalMod))
 			end
-			if player:hasTrait(SOTO.CharacterTrait.FAST_METABOLISM) and weight >= 70 then -- Losing weight faster when weight over 70
+			if player:hasTrait(CharacterTrait.WEIGHT_LOSS) and weight >= 70 then -- Losing weight faster when weight over 70
 				player:getNutrition():setCalories(currcalories - (CalWalking * CalMod))
 			end		
 		end	
 
 		-- callories when running		
 		if player:isPlayerMoving() and player:IsRunning() == true and player:isSprinting() == false then
-			if player:hasTrait(SOTO.CharacterTrait.SLOW_METABOLISM) and weight <= 90 then -- Gain weight faster when below 90 weight
+			if player:hasTrait(CharacterTrait.WEIGHT_GAIN) and weight <= 90 then -- Gain weight faster when below 90 weight
 				player:getNutrition():setCalories(currcalories + (CalRunning * CalMod))
 			end
-			if player:hasTrait(SOTO.CharacterTrait.FAST_METABOLISM) and weight >= 70 then -- Losing weight faster when weight over 70
+			if player:hasTrait(CharacterTrait.WEIGHT_LOSS) and weight >= 70 then -- Losing weight faster when weight over 70
 				player:getNutrition():setCalories(currcalories - (CalRunning * CalMod))
 			end		
 		end		
 
 		-- callories when sprinting		
 		if player:isPlayerMoving() and player:IsRunning() == false and player:isSprinting() == true then
-			if player:hasTrait(SOTO.CharacterTrait.SLOW_METABOLISM) and weight <= 90 then -- Gain weight faster when below 90 weight
+			if player:hasTrait(CharacterTrait.WEIGHT_GAIN) and weight <= 90 then -- Gain weight faster when below 90 weight
 				player:getNutrition():setCalories(currcalories + (CalSprinting * CalMod))
 			end
-			if player:hasTrait(SOTO.CharacterTrait.FAST_METABOLISM) and weight >= 70 then -- Losing weight faster when weight over 70
+			if player:hasTrait(CharacterTrait.WEIGHT_LOSS) and weight >= 70 then -- Losing weight faster when weight over 70
 				player:getNutrition():setCalories(currcalories - (CalSprinting * CalMod))
 			end		
 		end		
@@ -1921,10 +1921,10 @@ function caloriestraitsswing(player, weapon)
 
 	if weapon:getSwingAnim() == Heavy then calswingcost = 6.0 end
 	
-	if player:hasTrait(SOTO.CharacterTrait.SLOW_METABOLISM) and weight <= 90 then -- Gain weight faster when below 90 weight
+	if player:hasTrait(CharacterTrait.WEIGHT_GAIN) and weight <= 90 then -- Gain weight faster when below 90 weight
 		player:getNutrition():setCalories(currcalories + (calswingcost * calmod))
 	end
-	if player:hasTrait(SOTO.CharacterTrait.FAST_METABOLISM) and weight >= 70 then -- Losing weight faster when weight over 70
+	if player:hasTrait(CharacterTrait.WEIGHT_LOSS) and weight >= 70 then -- Losing weight faster when weight over 70
 		player:getNutrition():setCalories(currcalories - (calswingcost * calmod))
 	end		
 end
@@ -1993,7 +1993,7 @@ function bodytypetraitsxp(player, perk, amount)
 
 	local player = getPlayer();
 	
-	if player:hasTrait(SOTO.CharacterTrait.FAST_METABOLISM) then
+	if player:hasTrait(CharacterTrait.WEIGHT_LOSS) then
 		local modifier = 0.30;
 		if perk == Perks.Strength then
 			if amount > 30 or amount < 0 then return end
@@ -2014,7 +2014,7 @@ function bodytypetraitsxp(player, perk, amount)
 --			print("Fit added: " .. amount); 			
 		end		
 	end	
-	if player:hasTrait(SOTO.CharacterTrait.SLOW_METABOLISM) then
+	if player:hasTrait(CharacterTrait.WEIGHT_GAIN) then
 		local modifier = 0.30;	
 		if perk == Perks.Fitness then
 			if amount > 30 or amount < 0 then return end

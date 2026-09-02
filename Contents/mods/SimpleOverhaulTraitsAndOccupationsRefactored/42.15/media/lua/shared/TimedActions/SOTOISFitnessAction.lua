@@ -17,10 +17,10 @@ function ISFitnessAction:exeLooped()
 			SOAddWetness(player, 25, ZombRand(7));
 		end
 
-		if player:hasTrait(SOTO.CharacterTrait.SLOW_METABOLISM) and weight <= 90 then -- Gain weight faster when below 90 weight
+		if player:hasTrait(CharacterTrait.WEIGHT_GAIN) and weight <= 90 then -- Gain weight faster when below 90 weight
 			player:getNutrition():setCalories(currcalories + (calexe * calmod))
 		end
-		if player:hasTrait(SOTO.CharacterTrait.FAST_METABOLISM) and weight >= 70 then -- Losing weight faster when weight over 70
+		if player:hasTrait(CharacterTrait.WEIGHT_LOSS) and weight >= 70 then -- Losing weight faster when weight over 70
 			player:getNutrition():setCalories(currcalories - (calexe * calmod))
 		end		
 	
@@ -29,10 +29,10 @@ function ISFitnessAction:exeLooped()
 			SOAddThirst(player, 10,  0.005);		
 			SOAddWetness(player, 25, ZombRand(9));
 		end	
-		if player:hasTrait(SOTO.CharacterTrait.SLOW_METABOLISM) and weight <= 90 then -- Gain weight faster when below 90 weight
+		if player:hasTrait(CharacterTrait.WEIGHT_GAIN) and weight <= 90 then -- Gain weight faster when below 90 weight
 			player:getNutrition():setCalories(currcalories + (calburp * calmod))
 		end
-		if player:hasTrait(SOTO.CharacterTrait.FAST_METABOLISM) and weight >= 70 then -- Losing weight faster when weight over 70
+		if player:hasTrait(CharacterTrait.WEIGHT_LOSS) and weight >= 70 then -- Losing weight faster when weight over 70
 			player:getNutrition():setCalories(currcalories - (calburp * calmod))
 		end		
 		
@@ -42,10 +42,10 @@ function ISFitnessAction:exeLooped()
 			SOAddWetness(player, 25, ZombRand(7));
 		end	
 
-		if player:hasTrait(SOTO.CharacterTrait.SLOW_METABOLISM) and weight <= 90 then -- Gain weight faster when below 90 weight
+		if player:hasTrait(CharacterTrait.WEIGHT_GAIN) and weight <= 90 then -- Gain weight faster when below 90 weight
 			player:getNutrition():setCalories(currcalories + (calexe * calmod))
 		end
-		if player:hasTrait(SOTO.CharacterTrait.FAST_METABOLISM) and weight >= 70 then -- Losing weight faster when weight over 70
+		if player:hasTrait(CharacterTrait.WEIGHT_LOSS) and weight >= 70 then -- Losing weight faster when weight over 70
 			player:getNutrition():setCalories(currcalories - (calexe * calmod))
 		end		
 
@@ -56,10 +56,10 @@ function ISFitnessAction:exeLooped()
 			SOAddWetness(player, 25, ZombRand(7));
 		end	
 		
-		if player:hasTrait(SOTO.CharacterTrait.SLOW_METABOLISM) and weight <= 90 then -- Gain weight faster when below 90 weight
+		if player:hasTrait(CharacterTrait.WEIGHT_GAIN) and weight <= 90 then -- Gain weight faster when below 90 weight
 			player:getNutrition():setCalories(currcalories + (calexe * calmod))
 		end
-		if player:hasTrait(SOTO.CharacterTrait.FAST_METABOLISM) and weight >= 70 then -- Losing weight faster when weight over 70
+		if player:hasTrait(CharacterTrait.WEIGHT_LOSS) and weight >= 70 then -- Losing weight faster when weight over 70
 			player:getNutrition():setCalories(currcalories - (calexe * calmod))
 		end		
 
@@ -70,10 +70,10 @@ function ISFitnessAction:exeLooped()
 			SOAddWetness(player, 25, ZombRand(7));
 		end	
 		
-		if player:hasTrait(SOTO.CharacterTrait.SLOW_METABOLISM) and weight <= 90 then -- Gain weight faster when below 90 weight
+		if player:hasTrait(CharacterTrait.WEIGHT_GAIN) and weight <= 90 then -- Gain weight faster when below 90 weight
 			player:getNutrition():setCalories(currcalories + (calexe * calmod))
 		end
-		if player:hasTrait(SOTO.CharacterTrait.FAST_METABOLISM) and weight >= 70 then -- Losing weight faster when weight over 70
+		if player:hasTrait(CharacterTrait.WEIGHT_LOSS) and weight >= 70 then -- Losing weight faster when weight over 70
 			player:getNutrition():setCalories(currcalories - (calexe * calmod))
 		end		
 
@@ -84,10 +84,10 @@ function ISFitnessAction:exeLooped()
 			SOAddWetness(player, 20, ZombRand(7));
 		end		
 		
-		if player:hasTrait(SOTO.CharacterTrait.SLOW_METABOLISM) and weight <= 90 then -- Gain weight faster when below 90 weight
+		if player:hasTrait(CharacterTrait.WEIGHT_GAIN) and weight <= 90 then -- Gain weight faster when below 90 weight
 			player:getNutrition():setCalories(currcalories + (calexe * calmod))
 		end
-		if player:hasTrait(SOTO.CharacterTrait.FAST_METABOLISM) and weight >= 70 then -- Losing weight faster when weight over 70
+		if player:hasTrait(CharacterTrait.WEIGHT_LOSS) and weight >= 70 then -- Losing weight faster when weight over 70
 			player:getNutrition():setCalories(currcalories - (calexe * calmod))
 		end		
 	
@@ -98,10 +98,10 @@ function ISFitnessAction:exeLooped()
 			SOAddWetness(player, 20, ZombRand(7));
 		end	
 
-		if player:hasTrait(SOTO.CharacterTrait.SLOW_METABOLISM) and weight <= 90 then -- Gain weight faster when below 90 weight
+		if player:hasTrait(CharacterTrait.WEIGHT_GAIN) and weight <= 90 then -- Gain weight faster when below 90 weight
 			player:getNutrition():setCalories(currcalories + (calexe * calmod))
 		end
-		if player:hasTrait(SOTO.CharacterTrait.FAST_METABOLISM) and weight >= 70 then -- Losing weight faster when weight over 70
+		if player:hasTrait(CharacterTrait.WEIGHT_LOSS) and weight >= 70 then -- Losing weight faster when weight over 70
 			player:getNutrition():setCalories(currcalories - (calexe * calmod))
 		end		
 

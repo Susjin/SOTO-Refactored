@@ -125,8 +125,8 @@ module Base
 		DisabledInMultiplayer = false,
 		CharacterTrait = base:weightgain,
 		Cost = -2,
-		UIName = UI_trait_weightgain,
-		UIDescription = UI_trait_weightgaindesc,
+		UIName = UI_trait_slowmetabolism,
+		UIDescription = UI_trait_slowmetabolismdesc,
 		MutuallyExclusiveTraits = base:weightloss,
 	}
 	/* WEIGHTLOSS */
@@ -136,8 +136,8 @@ module Base
 		DisabledInMultiplayer = false,
 		CharacterTrait = base:weightloss,
 		Cost = -2,
-		UIName = UI_trait_weightloss,
-		UIDescription = UI_trait_weightlossdesc,
+		UIName = UI_trait_fastmetabolism,
+		UIDescription = UI_trait_fastmetabolismdesc,
 		MutuallyExclusiveTraits = base:weightgain,
 	}
 
