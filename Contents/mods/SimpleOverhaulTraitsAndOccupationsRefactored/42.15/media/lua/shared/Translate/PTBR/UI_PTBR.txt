@@ -3,8 +3,8 @@ UI_PTBR = {
     /******* VANILLA TRAITS *******/
 	UI_trait_underweightDesc2 = "Baixa eficácia em combate, baixa resistência e propenso a ferimentos.<br>Começa com peso 70 e o traço Metabolismo Rápido.",	
 	UI_trait_veryunderweightDesc2 = "Eficácia em combate muito baixa, resistência muito baixa e propenso a ferimentos.<br>Começa com peso 60 e o traço Metabolismo Rápido.",	
-	UI_trait_overweightDesc2 = "Baixa velocidade de corrida, baixa resistência e propenso a ferimentos.<br>Começa com peso 95 e o traço Metabolismo Lento.",	
-	UI_trait_obeseDesc2 = "Velocidade de corrida muito baixa, resistência muito baixa e propenso a ferimentos.<br>Começa com peso 105 e o traço Metabolismo Lento.",
+	UI_trait_overweightDesc2 = "Baixa velocidade de corrida, baixa resistência e propenso a ferimentos.<br>Começa com peso 95.",	
+	UI_trait_obeseDesc2 = "Velocidade de corrida muito baixa, resistência muito baixa e propenso a ferimentos.<br>Começa com peso 105.",
 
 	UI_trait_Cook2Desc = "Possui habilidades em Cozinha e Açougue.",
     UI_trait_BlacksmithDesc2 = "Conhece algumas receitas de ferraria.",

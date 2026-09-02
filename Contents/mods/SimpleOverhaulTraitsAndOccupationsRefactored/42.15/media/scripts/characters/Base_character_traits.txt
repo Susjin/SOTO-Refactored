@@ -45,11 +45,12 @@ module Base
 		Cost = -12,
 		UIName = UI_trait_weak,
 		UIDescription = UI_trait_weakdesc,
-		XPBoosts = Strength=-4,
+		XPBoosts = Strength=-5,
 		MutuallyExclusiveTraits = base:feeble;base:stout;base:strong;soto:strongback;soto:strongback2;soto:taut;soto:tireless;soto:tireless2;soto:stronggrip;soto:stronggrip2,
 	}
 
 	/* FITNESS TRAITS */
+
 	/* FIT */
 	character_trait_definition base:fit
 	{
@@ -62,6 +63,7 @@ module Base
 		XPBoosts = Fitness=2,
 		MutuallyExclusiveTraits = base:athletic;base:obese;base:out of shape;base:overweight;base:unfit,
 	}
+
 	/* ATHLETIC */
 	character_trait_definition base:athletic
 	{
@@ -74,6 +76,7 @@ module Base
 		XPBoosts = Fitness=4,
 		MutuallyExclusiveTraits = base:overweight;base:fit;base:obese;base:out of shape;base:unfit;base:very underweight;base:smoker;soto:slack,
 	}	
+
 	/* OUT OF SHAPE */
 	character_trait_definition base:out of shape
 	{
@@ -84,9 +87,22 @@ module Base
 		UIName = UI_trait_outofshape,
 		UIDescription = UI_trait_outofshapedesc,
 		XPBoosts = Fitness=-2,
-		MutuallyExclusiveTraits = base:athletic;base:fit;base:unfit,
+		MutuallyExclusiveTraits = base:athletic;base:fit;base:unfit;base:jogger,
 
 	}
+
+	/* SHORT OF BREATH */
+	character_trait_definition base:asthmatic
+	{
+		IsProfessionTrait = false,
+		DisabledInMultiplayer = false,
+		CharacterTrait = base:asthmatic,
+		Cost = -6,
+		UIName = UI_trait_Asthmatic,
+		UIDescription = UI_trait_AsthmaticDesc,
+		MutuallyExclusiveTraits = base:jogger;soto:tireless;soto:tireless2,
+	}
+
 	/* UNFIT */
 	character_trait_definition base:unfit
 	{
@@ -97,29 +113,29 @@ module Base
 		UIName = UI_trait_unfit,
 		UIDescription = UI_trait_unfitdesc,
 		XPBoosts = Fitness=-4,
-		MutuallyExclusiveTraits = base:athletic;base:fit;base:out of shape;soto:taut;soto:tireless;soto:tireless2,
+		MutuallyExclusiveTraits = base:athletic;base:fit;base:out of shape;base:jogger;soto:taut;soto:tireless;soto:tireless2,
 
 	}
 
 	/* CHARACTER WEIGHT TRAITS */
 	/* WEIGHTGAIN */
-	character_trait_definition base:weightgain /* DISABLED */
+	character_trait_definition base:weightgain
 	{
-		IsProfessionTrait = true,
+		IsProfessionTrait = false,
 		DisabledInMultiplayer = false,
 		CharacterTrait = base:weightgain,
-		Cost = 0,
+		Cost = -4,
 		UIName = UI_trait_weightgain,
 		UIDescription = UI_trait_weightgaindesc,
 		MutuallyExclusiveTraits = base:weightloss,
 	}
 	/* WEIGHTLOSS */
-	character_trait_definition base:weightloss /* DISABLED */
+	character_trait_definition base:weightloss
 	{
-		IsProfessionTrait = true,
+		IsProfessionTrait = false,
 		DisabledInMultiplayer = false,
 		CharacterTrait = base:weightloss,
-		Cost = 0,
+		Cost = -4,
 		UIName = UI_trait_weightloss,
 		UIDescription = UI_trait_weightlossdesc,
 		MutuallyExclusiveTraits = base:weightgain,
@@ -135,7 +151,6 @@ module Base
 		UIName = UI_trait_overweight,
 		UIDescription = UI_trait_overweightDesc2,
 		XPBoosts = Fitness=-1,
-		GrantedTraits = soto:slowmetabolism,
 		MutuallyExclusiveTraits = base:athletic;base:fit;base:unfit;base:emaciated;base:very underweight;base:underweight,
 
 	}
@@ -144,11 +159,10 @@ module Base
 		IsProfessionTrait = false,
 		DisabledInMultiplayer = false,
 		CharacterTrait = base:obese,
-		Cost = -11,
+		Cost = -10,
 		UIName = UI_trait_obese,
 		UIDescription = UI_trait_obeseDesc2,
 		XPBoosts = Fitness=-2,
-		GrantedTraits = soto:slowmetabolism,
 		MutuallyExclusiveTraits = base:athletic;base:emaciated;base:fit;base:lighteater;base:very underweight;base:underweight;base:overweight;soto:tireless;soto:tireless2,
 	}
 
@@ -158,11 +172,10 @@ module Base
 		IsProfessionTrait = false,
 		DisabledInMultiplayer = false,
 		CharacterTrait = base:underweight,
-		Cost = -5,
+		Cost = -6,
 		UIName = UI_trait_underweight,
 		UIDescription = UI_trait_underweightDesc2,
-		XPBoosts = Strength=-1,
-		GrantedTraits = soto:fastmetabolism,
+		XPBoosts = Fitness=-1,
 		MutuallyExclusiveTraits = base:obese;base:very underweight;base:overweight,
 	}
 	character_trait_definition base:very underweight
@@ -173,8 +186,7 @@ module Base
 		Cost = -10,
 		UIName = UI_trait_veryunderweight,
 		UIDescription = UI_trait_veryunderweightDesc2,
-		XPBoosts = Strength=-2,
-		GrantedTraits = soto:fastmetabolism,
+		XPBoosts = Fitness=-2,
 		MutuallyExclusiveTraits = base:athletic;base:strong;base:underweight;base:obese;base:overweight;base:stout;soto:tireless;soto:tireless2;base:heartyappetite;soto:stronggrip;soto:stronggrip2,
 	}
 
@@ -186,6 +198,7 @@ module Base
 		Cost = 0,
 		UIName = UI_trait_emaciated,
 		UIDescription = UI_trait_emaciateddesc,
+		MutuallyExclusiveTraits = base:obese;base:overweight,
 	}
 
 	/* AGILITY TRAITS */
@@ -196,8 +209,8 @@ module Base
 		CharacterTrait = base:jogger,
 		Cost = 2,
 		UIName = UI_trait_Jogger,
-		UIDescription = UI_trait_JoggerDesc,
 		XPBoosts = Sprinting=1,
+		MutuallyExclusiveTraits = base:out of shape;base:unfit;base:asthmatic,
 	}
 
 	character_trait_definition base:gymnast
@@ -240,7 +253,7 @@ module Base
 
 	character_trait_definition base:hiker
 	{
-		IsProfessionTrait = true,
+		IsProfessionTrait = false,
 		DisabledInMultiplayer = false,
 		CharacterTrait = base:hiker,
 		Cost = 6,
@@ -271,8 +284,19 @@ module Base
 		Cost = 1,
 		UIName = UI_trait_Inventive,
 		UIDescription = UI_trait_InventiveDesc,
-		MutuallyExclusiveTraits = soto:inventive2,
+		MutuallyExclusiveTraits = base:inventive_prof,
 	}
+
+    character_trait_definition base:inventive_prof
+    {
+        IsProfessionTrait = true,
+        DisabledInMultiplayer = false,
+        CharacterTrait = base:inventive_prof,
+        Cost = 0,
+        UIName = UI_trait_Inventive,
+        UIDescription = UI_trait_InventiveDesc,
+        MutuallyExclusiveTraits = base:inventive,
+    }
 
 	/* CRAFTING TRAITS */
 	character_trait_definition base:firstaid
@@ -309,7 +333,7 @@ module Base
 		UIDescription = UI_trait_CookDesc,
 		XPBoosts = Cooking=2;Butchering=1,
 		GrantedRecipes = MakeCakeBatter;MakePieDough;MakeBreaddough;MakeBaguetteDough;MakeBiscuits;MakeCookieDough;MakeChocolateChipCookieDough;MakeOatmealCookieDough;MakeShortbreadCookieDough;MakeSugarCookieDough;MakePizza;MakeFriedOnionRings;MakeFriedShrimp;MakeCabbageRolls;MakeJar;MakeGuacamole,
-		MutuallyExclusiveTraits = base:cook2;soto:culinary,	
+		MutuallyExclusiveTraits = base:cook2;soto:culinary,
 	}
 
 	character_trait_definition base:cook2
@@ -371,17 +395,17 @@ module Base
 		GrantedRecipes = SharpenBone;SharpenLongBone;SharpenJawbone;MakeBoneFishingHook;MakeBoneSewingNeedle;CarveKnittingNeedles;CarveBat;MakeBoneHatchetHead;MakeBoneAwl;MakeLargeBoneBead;MakeLargeBoneBeads;CarveWoodenFork;MakeBoneFork;CarveWoodenSpade;CarveGoblets;CarveBucket;CarveFleshingTool;CarveShortBat;CarveWhistle,
 	}	
 	
-	character_trait_definition base:mason /* DISABLED */
-	{
-		IsProfessionTrait = true,
-		DisabledInMultiplayer = false,
-		CharacterTrait = base:mason,
-		Cost = 0,
-		UIName = UI_trait_Mason,
-		UIDescription = UI_trait_MasonDesc,
-		XPBoosts = Masonry=1,
-		GrantedRecipes = Advanced_Forge;Blast_Furnace;Construct_Dome_Kiln;Forge;Smelting_Furnace;Forge_Primitive_Forge;Primitive_Furnace,
-	}	
+	character_trait_definition base:mason
+    {
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        CharacterTrait = base:mason,
+        Cost = 1,
+        UIName = UI_trait_Mason,
+        UIDescription = UI_trait_MasonDesc,
+        XPBoosts = Masonry=1,
+        GrantedRecipes = Advanced_Forge;Blast_Furnace;Construct_Dome_Kiln;Forge;Smelting_Furnace;Forge_Primitive_Forge;Primitive_Furnace,
+    }
 	
 	character_trait_definition base:artisan /* DISABLED */
 	{
@@ -406,7 +430,17 @@ module Base
 		UIDescription = UI_trait_PlaysBaseballDesc,
 		XPBoosts = Blunt=1,
 		GrantedRecipes = CarveBat,
-	}	
+	}
+
+    character_trait_definition base:tinkerer
+    {
+        IsProfessionTrait = false,
+        DisabledInMultiplayer = false,
+        CharacterTrait = base:tinkerer,
+        Cost = 3,
+        UIName = UI_trait_tinkerer,
+        XPBoosts = Maintenance=1,
+    }
 	
 	/* MIXED TRAITS */
 	character_trait_definition base:hunter
@@ -414,9 +448,9 @@ module Base
 		IsProfessionTrait = false,
 		DisabledInMultiplayer = false,
 		CharacterTrait = base:hunter,
-		Cost = 10,
+		Cost = 9,
 		UIName = UI_trait_Hunter,
-		UIDescription = UI_trait_HunterDesc,
+		UIDescription = UI_trait_Hunter2Desc,
 		XPBoosts = Aiming=1;Trapping=1;Sneak=1;SmallBlade=1;Tracking=1,
 		GrantedRecipes = MakeStickTrap;MakeSnareTrap;MakeWoodenBoxTrap;MakeTrapBox;MakeCageTrap;MakeStagHeadTrophy,
 		MutuallyExclusiveTraits = soto:hunter2,
@@ -480,19 +514,19 @@ module Base
 		UIName = UI_trait_Herbalist,
 		UIDescription = UI_trait_HerbalistDesc,
 		GrantedRecipes = Herbalist;MakePlantainPoultice;MakeComfreyPoultice;MakeWildGarlicPoultice;Black Sage Growing Season;Broadleaf Plantain Growing Season;Comfrey Growing Season;Common Mallow Growing Season;Wild Garlic Growing Season,
-		MutuallyExclusiveTraits = soto:herbalist2,
+		MutuallyExclusiveTraits = base:herbalist_prof,
 	}
 
-	character_trait_definition base:asthmatic
-	{
-		IsProfessionTrait = false,
-		DisabledInMultiplayer = false,
-		CharacterTrait = base:asthmatic,
-		Cost = -6,
-		UIName = UI_trait_Asthmatic,
-		UIDescription = UI_trait_AsthmaticDesc,
-		MutuallyExclusiveTraits = soto:tireless;soto:tireless2,
-	}
+    character_trait_definition base:herbalist_prof
+    {
+        IsProfessionTrait = true,
+        DisabledInMultiplayer = false,
+        CharacterTrait = base:herbalist_prof,
+        Cost = 0,
+        UIName = UI_trait_Herbalist,
+        UIDescription = UI_trait_HerbalistDesc,
+        MutuallyExclusiveTraits = base:herbalist,
+    }
 
 	/* VEHICLE TRAITS */
 	character_trait_definition base:speeddemon
@@ -524,7 +558,7 @@ module Base
 		IsProfessionTrait = false,
 		DisabledInMultiplayer = false,
 		CharacterTrait = base:shortsighted,
-		Cost = -2,
+		Cost = -4,
 		UIName = UI_trait_shortsigh,
 		UIDescription = UI_trait_shortsighdesc,
 		MutuallyExclusiveTraits = base:eagleeyed;soto:eagleeyed2,
@@ -535,7 +569,7 @@ module Base
 		IsProfessionTrait = false,
 		DisabledInMultiplayer = false,
 		CharacterTrait = base:eagleeyed,
-		Cost = 2,
+		Cost = 3,
 		UIName = UI_trait_eagleeyed,
 		UIDescription = UI_trait_eagleeyeddesc,
 		MutuallyExclusiveTraits = base:shortsighted;soto:eagleeyed2,
@@ -708,7 +742,7 @@ module Base
 		IsProfessionTrait = false,
 		DisabledInMultiplayer = false,
 		CharacterTrait = base:illiterate,
-		Cost = -8,
+		Cost = -12,
 		UIName = UI_trait_Illiterate,
 		UIDescription = UI_trait_IlliterateDesc,
 		MutuallyExclusiveTraits = base:fastreader;soto:fastreader2;base:slowreader,
@@ -746,7 +780,7 @@ module Base
 		Cost = -4,
 		UIName = UI_trait_claustro,
 		UIDescription = UI_trait_claustrodesc,
-		MutuallyExclusiveTraits = base:brave;base:desensitized;soto:desensitized2;base:agoraphobic;,
+		MutuallyExclusiveTraits = base:brave;base:desensitized;soto:desensitized2;base:agoraphobic,
 	}
 
 	/* NUTRITIONIST TRAIT */
@@ -792,7 +826,7 @@ module Base
 		IsProfessionTrait = false,
 		DisabledInMultiplayer = false,
 		CharacterTrait = base:fastlearner,
-		Cost = 8,
+		Cost = 7,
 		UIName = UI_trait_FastLearner,
 		UIDescription = UI_trait_FastLearnerDesc,
 		MutuallyExclusiveTraits = base:crafty;base:slowlearner,
@@ -803,7 +837,7 @@ module Base
 		IsProfessionTrait = false,
 		DisabledInMultiplayer = false,
 		CharacterTrait = base:slowlearner,
-		Cost = -8,
+		Cost = -7,
 		UIName = UI_trait_SlowLearner,
 		UIDescription = UI_trait_SlowLearnerDesc,
 		MutuallyExclusiveTraits = base:crafty;base:fastlearner,
@@ -862,9 +896,10 @@ module Base
 		IsProfessionTrait = false,
 		DisabledInMultiplayer = false,
 		CharacterTrait = base:smoker,
-		Cost = -3,
+		Cost = -6,
 		UIName = UI_trait_Smoker,
 		UIDescription = UI_trait_SmokerDesc2,
+		MutuallyExclusiveTraits = base:athletic,
 	}
 
 	character_trait_definition base:organized
@@ -920,7 +955,7 @@ module Base
 		IsProfessionTrait = false,
 		DisabledInMultiplayer = false,
 		CharacterTrait = base:lowthirst,
-		Cost = 1,
+		Cost = 3,
 		UIName = UI_trait_LowThirst,
 		UIDescription = UI_trait_LowThirstDesc,
 		MutuallyExclusiveTraits = base:highthirst,
@@ -931,7 +966,7 @@ module Base
 		IsProfessionTrait = false,
 		DisabledInMultiplayer = false,
 		CharacterTrait = base:highthirst,
-		Cost = -2,
+		Cost = -3,
 		UIName = UI_trait_HighThirst,
 		UIDescription = UI_trait_HighThirstDesc,
 		MutuallyExclusiveTraits = base:lowthirst,
@@ -979,7 +1014,7 @@ module Base
 		IsProfessionTrait = false,
 		DisabledInMultiplayer = false,
 		CharacterTrait = base:slowhealer,
-		Cost = -4,
+		Cost = -5,
 		UIName = UI_trait_SlowHealer,
 		UIDescription = UI_trait_SlowHealerDesc,
 		MutuallyExclusiveTraits = base:fasthealer,
@@ -1027,7 +1062,7 @@ module Base
 		IsProfessionTrait = false,
 		DisabledInMultiplayer = false,
 		CharacterTrait = base:thinskinned,
-		Cost = -6,
+		Cost = -8,
 		UIName = UI_trait_ThinSkinned,
 		UIDescription = UI_trait_ThinSkinnedDesc,
 		MutuallyExclusiveTraits = base:thickskinned,

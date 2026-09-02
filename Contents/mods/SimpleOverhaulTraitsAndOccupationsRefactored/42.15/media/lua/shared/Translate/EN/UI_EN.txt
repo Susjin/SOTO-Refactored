@@ -3,8 +3,8 @@ UI_EN = {
 	/* VANILLA */
 	UI_trait_underweightDesc2 = "Low combat effectiveness, low endurance and prone to injury.<br>Starts with 70 weight and Fast Metabolism trait.",	
 	UI_trait_veryunderweightDesc2 = "Very low combat effectiveness, very low endurance and prone to injury.<br>Starts with 60 weight and Fast Metabolism trait.",	
-	UI_trait_overweightDesc2 = "Low running speed, low endurance and prone to injury.<br>Starts with 95 weight and Slow Metabolism trait.",	
-	UI_trait_obeseDesc2 = "Very low running speed, very low endurance and prone to injury.<br>Starts with 105 weight and Slow Metabolism trait.",
+	UI_trait_overweightDesc2 = "Low running speed, low endurance and prone to injury.<br>Starts with 95 weight.",	
+	UI_trait_obeseDesc2 = "Very low running speed, very low endurance and prone to injury.<br>Starts with 105 weight.",
 
 	UI_trait_BlacksmithDesc2 = "Knows some blacksmithing recipes.",
 	UI_trait_TailorDesc2 = "Knows some tailoring recipes.",
