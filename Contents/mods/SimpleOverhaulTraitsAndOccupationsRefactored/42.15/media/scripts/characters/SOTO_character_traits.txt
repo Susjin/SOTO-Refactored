@@ -31,7 +31,7 @@ module SOTO
         IsProfessionTrait = false,
         DisabledInMultiplayer = false,
         CharacterTrait = soto:sneaky,
-        Cost = 2,
+        Cost = 1,
         UIName = UI_trait_sneaky,
         UIDescription = UI_trait_sneakydesc,
         XPBoosts = Sneak=1,
@@ -127,7 +127,7 @@ module SOTO
         MutuallyExclusiveTraits = base:cook;base:cook2,
     }
 
-    character_trait_definition soto:woodworker 
+    character_trait_definition soto:woodworker
     {
         IsProfessionTrait = false,
         DisabledInMultiplayer = false,
@@ -150,7 +150,7 @@ module SOTO
         GrantedRecipes = MakeRemoteControllerV1;MakeRemoteControllerV2;MakeRemoteControllerV3,
     }
 
-    character_trait_definition soto:automechanic 
+    character_trait_definition soto:automechanic
     {
         IsProfessionTrait = false,
         DisabledInMultiplayer = false,
@@ -161,7 +161,7 @@ module SOTO
         XPBoosts = Mechanics=1,
     }
 
-    character_trait_definition soto:metalwelder 
+    character_trait_definition soto:metalwelder
     {
         IsProfessionTrait = false,
         DisabledInMultiplayer = false,
@@ -271,7 +271,7 @@ module SOTO
         IsProfessionTrait = false,
         DisabledInMultiplayer = false,
         CharacterTrait = soto:bludgeoner,
-        Cost = 3,
+        Cost = 2,
         UIName = UI_trait_bludgeoner,
         UIDescription = UI_trait_bludgeonerdesc,
         XPBoosts = SmallBlunt=1,
@@ -310,6 +310,7 @@ module SOTO
         UIName = UI_trait_expshooter,
         UIDescription = UI_trait_expshooterdesc,
         XPBoosts = Aiming=2;Reloading=2,
+        GrantedTraits = base:marksman,
         MutuallyExclusiveTraits = soto:shooter;soto:shooter2;base:pacifist;soto:pacifist2,
     }
 
@@ -330,7 +331,7 @@ module SOTO
         IsProfessionTrait = false,
         DisabledInMultiplayer = false,
         CharacterTrait = soto:desensitized2,
-        Cost = 8,
+        Cost = 10,
         UIName = UI_trait_Desensitized,
         UIDescription = UI_trait_DesensitizedDesc,
         MutuallyExclusiveTraits = base:adrenalinejunkie;soto:adrenalinejunkie2;base:agoraphobic;base:claustrophobic;base:brave;base:cowardly;base:hemophobic;base:desensitized,
@@ -341,7 +342,7 @@ module SOTO
         IsProfessionTrait = false,
         DisabledInMultiplayer = false,
         CharacterTrait = soto:fearofthedark,
-        Cost = -1,
+        Cost = -2,
         UIName = UI_trait_fearofthedark,
         UIDescription = UI_trait_fearofthedarkdesc,
         MutuallyExclusiveTraits = base:brave;base:desensitized;soto:desensitized2;base:nightvision;soto:nightvision2,
@@ -399,7 +400,7 @@ module SOTO
         Cost = 3,
         UIName = UI_trait_tireless,
         UIDescription = UI_trait_tirelessdesc,
-        MutuallyExclusiveTraits = soto:tireless2;base:weak;base:obese;base:unfit;base:very underweight;base:asthmatic,
+        MutuallyExclusiveTraits = soto:tireless2;base:weak;base:obese;base:unfit;base:very underweight;base:out of shape;base:asthmatic,
     }
 
     /* MARK: Sweating */
@@ -511,7 +512,7 @@ module SOTO
         IsProfessionTrait = false,
         DisabledInMultiplayer = false,
         CharacterTrait = soto:depressive,
-        Cost = -3,
+        Cost = -5,
         UIName = UI_trait_depressive,
         UIDescription = UI_trait_depressivedesc,
         MutuallyExclusiveTraits = soto:optimistic,
@@ -568,7 +569,7 @@ module SOTO
         IsProfessionTrait = false,
         DisabledInMultiplayer = false,
         CharacterTrait = soto:alcoholic,
-        Cost = -5,
+        Cost = -6,
         UIName = UI_trait_alcoholic,
         UIDescription = UI_trait_alcoholicdesc,
         MutuallyExclusiveTraits = soto:calmminded,		
@@ -579,7 +580,7 @@ module SOTO
         IsProfessionTrait = false,
         DisabledInMultiplayer = false,
         CharacterTrait = soto:sensitivedigestion,
-        Cost = -2,
+        Cost = -3,
         UIName = UI_trait_sensitivedigestion,
         UIDescription = UI_trait_sensitivedigestiondesc,
     }
