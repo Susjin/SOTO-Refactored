@@ -385,23 +385,54 @@ Here are listed all the changes and additions this mod does to traits and profes
 #### Botanist
 - Increased remaining points: 1 >> 4
 
+#### Camp Counselor
+- Increased remaining points: 1 >> 3
+
+#### Criminal
+- Increased remaining points: -1 >> 0
+
 #### Dancer
 - Increased remaining points: -3 >> -1
 
 #### Delivery-man
 - Increased remaining points: -2 >> 0
 
+#### Demolition Worker
+- Increased remaining points: -5 >> -3
+
 #### Detective
 - Increased remaining points: -1 >> 3
+
+#### Drag Racer
+- Increased remaining points: 3 >> 4
+
+#### Gas Station Operator
+- Increased remaining points: 0 >> 1
+
+#### Huntsman
+- Increased remaining points: -2 >> 0
 
 #### Janitor
 - Changed skill levels:
   - Nimble: 0 >> 1
 
+#### Junkyard Worker
+- Increased remaining points: 2 >> 4
+
 #### Loader
 - Increased remaining points: -2 >> 0
 
+#### Miner
+- Increased remaining points: -4 >> -3
+
+#### Paparazzi
+- Increased remaining points: 5 >> 6
+
 #### Soldier
+- Increased remaining points: -6 >> -5
+- Granted Trait: Marksman
+
+#### Stuntman
 - Increased remaining points: -6 >> -5
 - Granted Trait: Marksman
 

@@ -1,10 +1,9 @@
 module SOTO
 {
-
 	/* SOTO OCCUPATIONS */
 	
 	/* DELIVERYMAN */
-	character_profession_definition soto:deliveryman  /* DONE */
+	character_profession_definition soto:deliveryman
 	{
 		CharacterProfession = soto:deliveryman,
 		Cost = 0,
@@ -16,7 +15,7 @@ module SOTO
 	}
 	
 	/* LOADER */
-	character_profession_definition soto:loader  /* DONE */
+	character_profession_definition soto:loader
 	{
 		CharacterProfession = soto:loader,
 		Cost = 0,
@@ -28,7 +27,7 @@ module SOTO
 	}
 
 	/* TRUCK DRIVER */
-	character_profession_definition soto:truckdriver  /* DONE */
+	character_profession_definition soto:truckdriver
 	{
 		CharacterProfession = soto:truckdriver,
 		Cost = 4,
@@ -41,7 +40,7 @@ module SOTO
 	}
 
 	/* SOLDIER */
-	character_profession_definition soto:soldier  /* DONE */
+	character_profession_definition soto:soldier
 	{
 		CharacterProfession = soto:soldier,
 		Cost = -5,
@@ -53,7 +52,7 @@ module SOTO
 	}	
 	
 	/* BOTANIST */
-	character_profession_definition soto:botanist  /* DONE */
+	character_profession_definition soto:botanist
 	{
 		CharacterProfession = soto:botanist,
 		Cost = 4,
@@ -66,7 +65,7 @@ module SOTO
 	}		
 	
 	/* GRAVEDIGGER */
-	character_profession_definition soto:gravedigger  /* DONE */
+	character_profession_definition soto:gravedigger
 	{
 		CharacterProfession = soto:gravedigger,
 		Cost = -2,
@@ -78,7 +77,7 @@ module SOTO
 	}	
 	
 	/* DANCER */
-	character_profession_definition soto:dancer  /* DONE */
+	character_profession_definition soto:dancer
 	{
 		CharacterProfession = soto:dancer,
 		Cost = -1,
@@ -90,7 +89,7 @@ module SOTO
 	}		
 	
 	/* PRIEST */
-	character_profession_definition soto:priest  /* DONE */
+	character_profession_definition soto:priest
 	{
 		CharacterProfession = soto:priest,
 		Cost = 14,
@@ -102,7 +101,7 @@ module SOTO
 	}	
 	
 	/* WEIGHTLIFTING INSTRUCTOR */
-	character_profession_definition soto:weightliftinginstructor  /* DONE */
+	character_profession_definition soto:weightliftinginstructor
 	{
 		CharacterProfession = soto:weightliftinginstructor,
 		Cost = -6,
@@ -114,7 +113,7 @@ module SOTO
 	}	
 	
 	/* DETECTIVE */
-	character_profession_definition soto:detective  /* DONE */
+	character_profession_definition soto:detective
 	{
 		CharacterProfession = soto:detective,
 		Cost = 3,
@@ -127,7 +126,7 @@ module SOTO
 	}	
 	
 	/* SCHOOL TEACHER */
-	character_profession_definition soto:schoolteacher  /* DONE */
+	character_profession_definition soto:schoolteacher
 	{
 		CharacterProfession = soto:schoolteacher,
 		Cost = 8,
@@ -139,7 +138,7 @@ module SOTO
 	}	
 	
 	/* JANITOR */
-	character_profession_definition soto:janitor  /* DONE */
+	character_profession_definition soto:janitor
 	{
 		CharacterProfession = soto:janitor,
 		Cost = 2,
@@ -154,7 +153,7 @@ module SOTO
 	character_profession_definition soto:stuntman
 	{
 		CharacterProfession = soto:stuntman,
-		Cost = -2,
+		Cost = 0,
 		UIName = UI_prof_stuntman,
 		UIDescription = UI_profdesc_stuntman,
 		IconPathName = profession_stuntman,
@@ -166,7 +165,7 @@ module SOTO
 	character_profession_definition soto:gasstationoperator
 	{
 		CharacterProfession = soto:gasstationoperator,
-		Cost = 0,
+		Cost = 1,
 		UIName = UI_prof_gasstationoperator,
 		UIDescription = UI_profdesc_gasstationoperator,
 		IconPathName = profession_gasstationoperator,
@@ -178,7 +177,7 @@ module SOTO
 	character_profession_definition soto:campcounselor
 	{
 		CharacterProfession = soto:campcounselor,
-		Cost = 1,
+		Cost = 3,
 		UIName = UI_prof_campcounselor,
 		UIDescription = UI_profdesc_campcounselor,
 		IconPathName = profession_campcounselor,
@@ -191,7 +190,7 @@ module SOTO
 	character_profession_definition soto:dragracer
 	{
 		CharacterProfession = soto:dragracer,
-		Cost = 3,
+		Cost = 4,
 		UIName = UI_prof_dragracer,
 		UIDescription = UI_profdesc_dragracer,
 		IconPathName = profession_dragracer,
@@ -204,7 +203,7 @@ module SOTO
 	character_profession_definition soto:junkyardworker
 	{
 		CharacterProfession = soto:junkyardworker,
-		Cost = 2,
+		Cost = 4,
 		UIName = UI_prof_junkyardworker,
 		UIDescription = UI_profdesc_junkyardworker,
 		IconPathName = profession_junkyardworker,
@@ -229,7 +228,7 @@ module SOTO
 	character_profession_definition soto:demolitionworker
 	{
 		CharacterProfession = soto:demolitionworker,
-		Cost = -5,
+		Cost = -3,
 		UIName = UI_prof_demolitionworker,
 		UIDescription = UI_profdesc_demolitionworker,
 		IconPathName = profession_demolitionworker,
@@ -253,7 +252,7 @@ module SOTO
 	character_profession_definition soto:paparazzi
 	{
 		CharacterProfession = soto:paparazzi,
-		Cost = 5,
+		Cost = 6,
 		UIName = UI_prof_paparazzi,
 		UIDescription = UI_profdesc_paparazzi,
 		IconPathName = profession_paparazzi,
@@ -265,7 +264,7 @@ module SOTO
 	character_profession_definition soto:miner
 	{
 		CharacterProfession = soto:miner,
-		Cost = -4,
+		Cost = -3,
 		UIName = UI_prof_miner,
 		UIDescription = UI_profdesc_miner,
 		IconPathName = profession_miner,
@@ -289,7 +288,7 @@ module SOTO
 	character_profession_definition soto:criminal
 	{
 		CharacterProfession = soto:criminal,
-		Cost = -1,
+		Cost = 0,
 		UIName = UI_prof_criminal,
 		UIDescription = UI_profdesc_criminal,
 		IconPathName = profession_criminal,
@@ -314,7 +313,7 @@ module SOTO
 	character_profession_definition soto:huntsman
 	{
 		CharacterProfession = soto:huntsman,
-		Cost = -2,
+		Cost = 0,
 		UIName = UI_prof_huntsman,
 		UIDescription = UI_profdesc_huntsman,
 		IconPathName = profession_huntsman,

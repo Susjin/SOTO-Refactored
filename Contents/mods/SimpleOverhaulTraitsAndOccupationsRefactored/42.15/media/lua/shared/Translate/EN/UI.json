@@ -144,7 +144,7 @@
     "UI_trait_usedtocorpses": "Accustomed to the Smell",
     "UI_trait_usedtocorpsesdesc": "Decaying corpses do not cause nausea.<br>(If do not have nausea at the moment. Does not affect zombification sickness.)",
     "UI_trait_refueller": "Refueller",
-    "UI_trait_refuellerdesc": "Transfers inventory items, refuels vehicles and drains gasoline faster.<br>(-25% inventory transferring time, refueling vehicles and draining gasoline.<br>Up to -60% inventory transferring time with ",
+    "UI_trait_refuellerdesc": "Transfers inventory items, refuels vehicles and drains gasoline faster.<br>(-25% inventory transferring time, refueling vehicles and draining gasoline.<br>Up to -60% inventory transferring time with Dexterous trait.)",
     "UI_trait_cuttingtools": "Cutting Tools",
     "UI_trait_cuttingtoolsdesc": "Gains +20% XP when using Axes, Short Blades, or Long Blades with the main hand.",
     "UI_trait_lifelonglearner": "Lifelong Learner",
