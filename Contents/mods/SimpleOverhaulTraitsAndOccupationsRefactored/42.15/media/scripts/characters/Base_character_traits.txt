@@ -132,6 +132,7 @@ module Base
 		UIName = UI_trait_slowmetabolism,
 		UIDescription = UI_trait_slowmetabolismdesc,
 		MutuallyExclusiveTraits = base:weightloss,
+		Texture = trait_weightgainnew,
 	}
 
 	character_trait_definition base:weightloss
@@ -143,6 +144,7 @@ module Base
 		UIName = UI_trait_fastmetabolism,
 		UIDescription = UI_trait_fastmetabolismdesc,
 		MutuallyExclusiveTraits = base:weightgain,
+		Texture = trait_weightlossnew,
 	}
 
 	character_trait_definition base:overweight
@@ -155,7 +157,6 @@ module Base
 		UIDescription = UI_trait_overweightDesc2,
 		XPBoosts = Fitness=-1,
 		MutuallyExclusiveTraits = base:athletic;base:fit;base:unfit;base:emaciated;base:very underweight;base:underweight,
-
 	}
 
 	character_trait_definition base:obese

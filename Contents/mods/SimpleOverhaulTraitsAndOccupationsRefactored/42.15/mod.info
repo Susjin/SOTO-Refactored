@@ -4,6 +4,8 @@ description=This global mod changes traits and occupations from vanilla game and
 icon=icon.png
 author=hea, peteR
 
+pack=metabolism
+
 modversion=1.0.0
 versionMin=42.20
 category=features
