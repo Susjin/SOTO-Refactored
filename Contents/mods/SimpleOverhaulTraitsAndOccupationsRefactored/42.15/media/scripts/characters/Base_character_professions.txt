@@ -17,7 +17,7 @@ module Base
 	character_profession_definition base:burgerflipper
 	{
 		CharacterProfession = base:burgerflipper,
-		Cost = 2,
+		Cost = 3,
 		UIName = UI_prof_BurgerFlipper,
 		IconPathName = profession_burgerflipper,
 		XPBoosts = Cooking=1;Maintenance=1;SmallBlade=1,
@@ -40,7 +40,7 @@ module Base
 	character_profession_definition base:chef
 	{
 		CharacterProfession = base:chef,
-		Cost = 0,
+		Cost = 2,
 		UIName = UI_prof_Chef,
 		UIDescription = UI_profdesc_chef,
 		IconPathName = profession_chef2,
@@ -53,7 +53,7 @@ module Base
 	character_profession_definition base:constructionworker
 	{
 		CharacterProfession = base:constructionworker,
-		Cost = 0,
+		Cost = 1,
 		UIName = UI_prof_constructionworker,
 		IconPathName = profession_constructionworker2,
 		XPBoosts = Woodwork=1;SmallBlunt=2;Masonry=2,
@@ -64,7 +64,7 @@ module Base
 	character_profession_definition base:doctor
 	{
 		CharacterProfession = base:doctor,
-		Cost = 5,
+		Cost = 6,
 		UIName = UI_prof_Doctor,
 		IconPathName = profession_doctor2,
 		XPBoosts = Doctor=4,
@@ -88,7 +88,7 @@ module Base
 	character_profession_definition base:engineer
 	{
 		CharacterProfession = base:engineer,
-		Cost = -1,
+		Cost = 2,
 		UIName = UI_prof_Engineer,
 		UIDescription = UI_profdesc_engineer,
 		IconPathName = profession_engineer,
@@ -125,7 +125,7 @@ module Base
 	character_profession_definition base:fisherman
 	{
 		CharacterProfession = base:fisherman,
-		Cost = 2,
+		Cost = 3,
 		UIName = UI_prof_Fisherman,
 		UIDescription = UI_profdesc_fisherman,
 		IconPathName = profession_fisher2,
@@ -189,7 +189,7 @@ module Base
 		Cost = 8,
 		UIName = UI_prof_Nurse,
 		IconPathName = profession_nurse,
-		XPBoosts = Doctor=1,
+		XPBoosts = Doctor=2,
 		GrantedTraits = base:nightowl,
 	}
 
@@ -210,7 +210,7 @@ module Base
 	character_profession_definition base:policeofficer
 	{
 		CharacterProfession = base:policeofficer,
-		Cost = -2,
+		Cost = -3,
 		UIName = UI_prof_policeoff,
 		IconPathName = profession_policeofficer2,
 		XPBoosts = Aiming=3;Reloading=2;Nimble=1;SmallBlunt=1,
@@ -221,7 +221,7 @@ module Base
 	character_profession_definition base:rancher
 	{
 		CharacterProfession = base:rancher,
-		Cost = 3,
+		Cost = 2,
 		UIName = UI_prof_rancher,
 		IconPathName = profession_rancher,
 		XPBoosts = Husbandry=3;Butchering=3;Farming=1;Fitness=1,
@@ -233,7 +233,7 @@ module Base
 	character_profession_definition base:repairman
 	{
 		CharacterProfession = base:repairman,
-		Cost = -2,
+		Cost = -1,
 		UIName = UI_prof_Repairman,
 		IconPathName = profession_repairman2,
 		XPBoosts = Electricity=1;Woodwork=1;Maintenance=1;Carving=1;SmallBlunt=1,
@@ -245,7 +245,7 @@ module Base
 	character_profession_definition base:securityguard
 	{
 		CharacterProfession = base:securityguard,
-		Cost = 0,
+		Cost = 3,
 		UIName = UI_prof_securityguard,
 		IconPathName = profession_securityguard2,
 		XPBoosts = Aiming=1;Reloading=1;Sprinting=1;Lightfoot=1,

@@ -12,6 +12,7 @@ Here are listed all the changes and additions this mod does to traits and profes
   - Sneaking: 2 >> 1
 
 #### Burger Flipper
+- Increased remaining points: 2 >> 3
 - Changed skill levels:
   - Cooking: 2 >> 1
 - New granted trait: Dextrous
@@ -21,7 +22,7 @@ Here are listed all the changes and additions this mod does to traits and profes
 - New granted trait: Handy
 
 #### Chef
-- Increased remaining points: -2 >> 0
+- Increased remaining points: -2 >> 2
 - Changed skill levels:
     - Butchering: 2 >> 1
     - Short Blade: 1 >> 0
@@ -31,13 +32,13 @@ Here are listed all the changes and additions this mod does to traits and profes
 - New granted trait: Improved Foraging (WIP)
 
 #### Construction Worker
-- Increased remaining points: -2 >> 0
+- Increased remaining points: -2 >> 1
 - Changed skill levels:
     - Long Blunt: 1 >> 0
 - New granted trait: Strong Back
 
 #### Doctor
-- Increased remaining points: 0 >> 4
+- Increased remaining points: 0 >> 6
 - Changed skill levels:
   - First Aid: 6 >> 4
   - Short Blade: 1 >> 0
@@ -50,7 +51,7 @@ Here are listed all the changes and additions this mod does to traits and profes
 - New granted trait: Generator Expert
 
 #### Engineer
-- Increased remaining points: -4 >> -1
+- Increased remaining points: -4 >> 2
 - New granted trait: Generator Expert
 - New granted trait: Inventive
 
@@ -65,7 +66,7 @@ Here are listed all the changes and additions this mod does to traits and profes
 - New granted trait: Break-in Technique
 
 #### Fishing Guide
-- Increased remaining points: -2 >> 2
+- Increased remaining points: -2 >> 3
 - Changed skill levels:
   - Fishing: 3 >> 4
   - Foraging: 1 >> 0
@@ -92,7 +93,7 @@ Here are listed all the changes and additions this mod does to traits and profes
 #### Nurse
 - Increased remaining points: 0 >> 8
 - Changed skill levels:
-  - First Aid: 3 >> 1
+  - First Aid: 3 >> 2
   - Lightfooted: 1 >> 0
   - Fitness: 1 >> 0
 
@@ -105,7 +106,7 @@ Here are listed all the changes and additions this mod does to traits and profes
 - New granted trait: Advanced Foraging (WIP)
 
 #### Police Officer
-- Increased remaining points: -4 >> -2
+- Increased remaining points: -4 >> -3
 - Changed skill levels:
   - Aiming: 4 >> 3
   - Reloading: 1 >> 2
@@ -113,13 +114,14 @@ Here are listed all the changes and additions this mod does to traits and profes
 - New granted trait: Shooter
 
 #### Rancher
-- Increased remaining points: 0 >> 3
+- Increased remaining points: 0 >> 2
 - Changed skill levels:
   - Animal Care: 4 >> 3
   - Farming: 0 >> 1
 - New granted trait: Improved Foraging (WIP)
 
 #### DIY Expert
+- Increased remaining points: -2 >> 1
 - Changed skill levels:
   - Electrical: 0 >> 1
   - Maintenance: 2 >> 1
@@ -128,7 +130,7 @@ Here are listed all the changes and additions this mod does to traits and profes
 - New granted trait: Handy
 
 #### Security Guard
-- Increased remaining points: -2 >> 0
+- Increased remaining points: -2 >> 3
 - Changed skill levels:
   - Aiming: 0 >> 1
   - Reloading: 0 >> 1
