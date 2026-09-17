@@ -1,3 +1,4 @@
+--[[
 require "TimedAction/ISFitnessAction"
 
 local oldISFitnessAction_exeLooped = ISFitnessAction.exeLooped
@@ -110,3 +111,4 @@ function ISFitnessAction:exeLooped()
 oldISFitnessAction_exeLooped(self)
 
 end
+--]]

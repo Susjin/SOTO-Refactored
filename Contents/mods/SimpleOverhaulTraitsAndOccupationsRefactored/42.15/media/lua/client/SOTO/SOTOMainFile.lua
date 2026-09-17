@@ -2110,7 +2110,7 @@ Events.EveryHours.Add(SOcheckWeight);
 -- ADD EXP
 Events.AddXP.Add(weapontraitsxp)
 Events.AddXP.Add(depressivexp);
-Events.AddXP.Add(bodytypetraitsxp);
+--Events.AddXP.Add(bodytypetraitsxp);
 -- ON GAME START
 Events.OnGameStart.Add(SOcheckWeight);
 -- ON CREATE PLAYER
