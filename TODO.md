@@ -29,10 +29,10 @@
 - Lifelong Learner
 - Commercial Driver
 - Brawler
-- Generator Expert
 
 ## Traits Done
 
 - Break-in Technique
-- Strong Grip
+- Generator Expert
 - Refueller
+- Strong Grip
