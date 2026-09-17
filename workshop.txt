@@ -1,0 +1,6 @@
+version=1
+id=3797729394
+title=Simple Overhaul: Traits and Occupations (SOTO) - Refactored
+description=PLACEHOLDER
+tags=Build 42;Balance;Skills;Traits;WIP
+visibility=unlisted
