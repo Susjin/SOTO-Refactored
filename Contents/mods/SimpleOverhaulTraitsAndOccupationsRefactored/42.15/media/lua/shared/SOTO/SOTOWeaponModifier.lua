@@ -9,7 +9,7 @@
 local SOTOWeaponModifier = {}
 ----------------------------------------------------------------------------------------------
 --Requires
-local SOTOUtility = require("SOTOUtility")
+local SOTOUtility = require("SOTO/SOTOUtility")
 
 --Pulling global to local for performance
 local SOTO = SOTO
@@ -37,7 +37,7 @@ function SOTOWeaponModifier.setWeaponStats(weapon, weaponItemScript, doorDamage,
     weapon:syncItemFields()
 end
 
----main
+---Main function to change the stat of a weapon. Also resets the stats if conditions are not met
 ---@param player IsoPlayer
 ---@param weapon HandWeapon?
 function SOTOWeaponModifier.main(player, weapon)

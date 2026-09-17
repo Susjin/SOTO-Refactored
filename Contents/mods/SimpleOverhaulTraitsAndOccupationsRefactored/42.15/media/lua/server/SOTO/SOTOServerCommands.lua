@@ -9,13 +9,15 @@
 local SOTOServerCommands = {}
 ----------------------------------------------------------------------------------------------
 --Requires
-local SOTOUtility = require("SOTOUtility")
+local SOTOUtility = require("SOTO/SOTOUtility")
 local SOTOWeaponModifier = require("SOTO/SOTOWeaponModifier")
 
 --Pulling global to local for performance
 local pairs = pairs
 
----WeaponModifier
+-- ----------------------- All Server Commands ----------------------- --
+
+---Runs to change the specific stats of a equipped weapon
 ---@param player IsoPlayer
 ---@param args table
 function SOTOServerCommands.WeaponModifier(player, args)
@@ -32,9 +34,9 @@ end
 
 
 
---[[Main command function]]--
+-- ----------------------- Main command function ----------------------- --
 
----Run on a client command is received
+---Run once a client command is received
 ---@param module string To check if the command is from SOTO
 ---@param command string What function to execute
 ---@param player IsoPlayer The player that sent the command

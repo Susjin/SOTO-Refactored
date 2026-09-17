@@ -9,11 +9,10 @@
 local SOTOWeaponModifierClient = {}
 ----------------------------------------------------------------------------------------------
 --Requires
-local SOTOUtility = require("SOTOUtility")
+local SOTOUtility = require("SOTO/SOTOUtility")
 local SOTOWeaponModifier = require("SOTO/SOTOWeaponModifier")
 
-
----changePlayerWeaponStats
+---Change the stat of a weapon depending of the trait. Also checks for SP|MP
 ---@param playerNumOrCharacter IsoGameCharacter|number The player that triggered the event
 ---@param item InventoryItem The equipped item
 function SOTOWeaponModifierClient.changePlayerWeaponStats(playerNumOrCharacter, item)
