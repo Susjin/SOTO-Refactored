@@ -28,6 +28,12 @@ local function healDoorDamage(door)
         door:setHealth(door:getMaxHealth())
     end
 end
+---@param generator IsoGenerator
+local function setGeneratorCondition(generator)
+    if generator then
+        generator:setCondition(50)
+    end
+end
 
 
 ---@param playerIndex integer
@@ -35,28 +41,30 @@ end
 ---@param worldObjects table
 local function onSOTOContextMenu(playerIndex, contextMenu, worldObjects)
     local player = getSpecificPlayer(playerIndex)
-    local door
+    local door, generator
     for i = 1, #worldObjects do
         if instanceof(worldObjects[i], "IsoDoor") then
             door = worldObjects[i]
             break
         end
+        if instanceof(worldObjects[i], "IsoGenerator") then
+            generator = worldObjects[i]
+            break
+        end
     end
 
-    contextMenu:addOption("SOTO: Heal Door", door, healDoorDamage)
+    if door then contextMenu:addOption("SOTO: Heal Door", door, healDoorDamage) end
+    if generator then contextMenu:addOption("SOTO: Set Condition", generator, setGeneratorCondition) end
+
 
     local weaponSubMenuOption = contextMenu:addOption("SOTO: Weapon door damage", worldObjects, nil)
     local weaponSubMenu = contextMenu:getNew(contextMenu)
-
     contextMenu:addSubMenu(weaponSubMenuOption, weaponSubMenu)
 
     weaponSubMenu:addOption("35", player, changeWeaponDoorDamage, 35)
     weaponSubMenu:addOption("50", player, changeWeaponDoorDamage, 50)
     weaponSubMenu:addOption("75", player, changeWeaponDoorDamage, 75)
     weaponSubMenu:addOption("100", player, changeWeaponDoorDamage, 100)
-
-    
-
 end
 
 
