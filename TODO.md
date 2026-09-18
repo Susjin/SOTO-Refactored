@@ -6,6 +6,9 @@
   - eg. One minute player have 1850 calorioes, next minute it has 1845, so take the delt (5) and use it to make calculations on how much extra calories would have been gained/lost
   - Use the player modData to get calories changes
 
+#### Fix generator
+- Generator Fix action is not continuing after first fix, verify if that is a vanilla issue
+
 ### To be done
 - Calm-minded
 - Fear of the Dark
@@ -29,10 +32,10 @@
 - Lifelong Learner
 - Commercial Driver
 - Brawler
+- Refueller
 
 ## Traits Done
 
 - Break-in Technique
 - Generator Expert
-- Refueller
 - Strong Grip
