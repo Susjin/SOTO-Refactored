@@ -9,6 +9,15 @@
 #### Fix generator
 - Generator Fix action is not continuing after first fix, verify if that is a vanilla issue
 
+
+### Traits to be re-added
+- Improvised Cleaning
+- Enjoy the Ride
+- Heavy Axe My Beloved
+- Miner's Endurance
+- Ninja Way
+- Snorer
+
 ### To be done
 - Calm-minded
 - Fear of the Dark
