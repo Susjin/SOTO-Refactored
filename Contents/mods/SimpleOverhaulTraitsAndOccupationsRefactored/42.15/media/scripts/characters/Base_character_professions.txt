@@ -44,7 +44,7 @@ module Base
 		UIName = UI_prof_Chef,
 		UIDescription = UI_profdesc_chef,
 		IconPathName = profession_chef2,
-		XPBoosts = Cooking=4;Butchering=1;SmallBlunt=1,
+		XPBoosts = Cooking=4;Butchering=1;SmallBlade=1,
 		GrantedTraits = base:cook2;soto:improvedforaging;base:nutritionist2,
 		GrantedRecipes = MakeCakeBatter;MakePieDough;MakeBreadDough;MakeBaguetteDough;MakeBiscuits;MakeChocolateCookieDough;MakeChocolateChipCookieDough;MakeOatmealCookieDough;MakeShortbreadCookieDough;MakeSugarCookieDough;MakePizza;MakeFriedOnionRings;MakeFriedShrimp;MakeSushi;MakeOnigiri;MakeMaki;MakeCabbageRolls;PrepareMuffins;MakeGuacamole;MakeJar,
 	}	

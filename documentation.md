@@ -1,9 +1,11 @@
-# Simple Overhaul: Traits and Professions
-Here are listed all the changes and additions this mod does to traits and professions
+# Simple Overhaul: Traits and Occupations
+
+Here are listed all the changes and additions this mod does to traits and occupations
+
 ---
 ## Changes applied to vanilla
 
-### Professions
+### Occupations
 #### Burglar
 - Increased remaining points: -6 >> 0
 - Changed skill levels:
@@ -382,7 +384,7 @@ Here are listed all the changes and additions this mod does to traits and profes
 
 ## Changes applied to default SOTO
 
-### Professions
+### Occupations
 
 #### Botanist
 - Increased remaining points: 1 >> 4
