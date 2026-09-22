@@ -1,6 +1,6 @@
 require "TimedActions/ISBaseTimedAction"
 
---ISAddGasolineToVehicle
+--ISAddGasolineToVehicle | Triggered when adding gas to a car
 local old_ISAddGasolineToVehicle_getDuration = ISAddGasolineToVehicle.getDuration
 function ISAddGasolineToVehicle:getDuration()
     local baseDuration = old_ISAddGasolineToVehicle_getDuration(self)
@@ -10,7 +10,7 @@ function ISAddGasolineToVehicle:getDuration()
     return baseDuration
 end
 
---ISTakeGasolineFromVehicle
+--ISTakeGasolineFromVehicle | Triggered when taking gas from a car
 local old_ISTakeGasolineFromVehicle_getDuration = ISTakeGasolineFromVehicle.getDuration
 function ISTakeGasolineFromVehicle:getDuration()
     local baseDuration = old_ISTakeGasolineFromVehicle_getDuration(self)
@@ -20,7 +20,7 @@ function ISTakeGasolineFromVehicle:getDuration()
     return baseDuration
 end
 
---ISRefuelFromGasPump
+--ISRefuelFromGasPump | Triggered when refueling a car from a gas pump
 local old_ISRefuelFromGasPump_getDuration = ISRefuelFromGasPump.getDuration
 function ISRefuelFromGasPump:getDuration()
     local baseDuration = old_ISRefuelFromGasPump_getDuration(self)
@@ -30,7 +30,7 @@ function ISRefuelFromGasPump:getDuration()
     return baseDuration
 end
 
---ISTakeFuel
+--ISTakeFuel | Triggered when using the context menu on a gas pump to take fuel to a can
 local old_ISTakeFuel_getDuration = ISTakeFuel.getDuration
 function ISTakeFuel:getDuration()
     local baseDuration = old_ISTakeFuel_getDuration(self)
@@ -40,5 +40,14 @@ function ISTakeFuel:getDuration()
     return baseDuration
 end
 
+--ISAddFuel | Triggered when adding fuel to a generator
+local old_ISAddFuel_getDuration = ISAddFuel.getDuration
+function ISAddFuel:getDuration()
+    local baseDuration = old_ISAddFuel_getDuration(self)
+    if self.character:hasTrait(SOTO.CharacterTrait.REFUELLER) then
+        baseDuration = baseDuration * 0.75
+    end
+    return baseDuration
+end
 
 

@@ -41,10 +41,11 @@
 - Lifelong Learner
 - Commercial Driver
 - Brawler
-- Refueller
+- Refueller (Inventory Transfer interction)
 
 ## Traits Done
 
 - Break-in Technique
 - Generator Expert
+- Refueller (All Gas interactions)
 - Strong Grip

@@ -471,6 +471,9 @@ Here are listed all the changes and additions this mod does to traits and occupa
 ##### Herbalist (Profession)
 - Removed
 
+##### Refueller
+- Now also gets a speed bonus when refueling a generator
+
 ##### Tireless 
 - Mutually Exclusive:
   - Out of Shape
