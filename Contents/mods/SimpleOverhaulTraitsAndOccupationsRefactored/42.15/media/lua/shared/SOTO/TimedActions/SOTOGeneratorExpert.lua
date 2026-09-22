@@ -32,7 +32,7 @@ function ISFixGenerator:complete()
 
 	if self.character:hasTrait(SOTO.CharacterTrait.GENERATOR_EXPERT) or self.character:hasTrait(SOTO.CharacterTrait.GENERATOR_EXPERT2) then
 		self.generator:setCondition(self.generator:getCondition() + 2.5 + (1*(self.character:getPerkLevel(Perks.Electricity))/2))
-		self.character:getXp():AddXP(Perks.Electricity, 5)
+		addXp(self.character, Perks.Electricity, 5)
 	end
 
 	if SOTOUtility.getGameMode() == "SP" then
