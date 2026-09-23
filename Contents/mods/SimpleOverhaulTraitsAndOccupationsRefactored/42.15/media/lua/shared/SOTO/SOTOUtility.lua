@@ -21,6 +21,16 @@ SOTOUtility.GameMode = {
     MP_SERVER = "MP_Server",
 }
 
+---Logs a message on the console if debug mode is on
+---@param message string Message to be print
+---@param location string From what file|function it is
+---@param gameMode string What gamemode is running on the client executed
+function SOTOUtility.logDebug(message, location, gameMode)
+    if getDebug or SOTOUtility.getGameMode() == SOTOUtility.GameMode["MP_SERVER"] then
+        print(string.format("SOTODebug[%s|%s]: %s", gameMode or "", location or "", message or ""))
+    end
+end
+
 ---Function responsible for determining the current game mode, returns "SP" for single player, "MP_Client" for multiplayer client and "MP_Server" for multiplayer server
 ---@return "SP"|"MP_Client"|"MP_Server"
 function SOTOUtility.getGameMode()
@@ -30,16 +40,6 @@ function SOTOUtility.getGameMode()
         return SOTOUtility.GameMode.MP_CLIENT
     end
     return SOTOUtility.GameMode.MP_SERVER
-end
-
----Logs a message on the console if debug mode is on
----@param message string Message to be print
----@param location string From what file|function it is
----@param gameMode string What gamemode is running on the client executed
-function SOTOUtility.logDebug(message, location, gameMode)
-    if getDebug then
-        print(string.format("SOTODebug[%s|%s]: %s", gameMode or "", location or "", message or ""))
-    end
 end
 
 ---Function that returns ArrayList of all players in case its called on Server, all ever loaded players in case it's called on MP Client, or local player list in case it's called on SP. If player is passed as argument, returns list with only that player.
