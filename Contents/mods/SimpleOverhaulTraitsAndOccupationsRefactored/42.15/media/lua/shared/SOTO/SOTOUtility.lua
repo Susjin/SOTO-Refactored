@@ -68,6 +68,26 @@ function SOTOUtility.getPlayersList(player)
     return playerList
 end
 
+---Gets a object from a given position on the world
+---@param objectPos ObjectPosition
+---@param objectType string
+---@return IsoObject|nil
+function SOTOUtility.getObjectFromPosition(objectPos, objectType)
+    local square = getCell():getGridSquare(objectPos.x, objectPos.y, objectPos.z)
+    if square then
+        ---@type ArrayList
+        local objects = square:getObjects()
+        for i = 0, objects:size() - 1 do
+            local object = objects:get(i)
+            if instanceof(object, objectType) then
+                return object
+            end
+        end
+    end
+    return nil
+end
+
+
 ---Prints a whole table, used for debug
 ---@param table table to be printed
 function SOTOUtility.printTable(table)
