@@ -14,7 +14,7 @@ local SOTOUtility = {}
 local getDebug = getDebug()
 local pairs = pairs
 
---- @type {SP: "SP", MP_CLIENT: "MP_Client", MP_SERVER: "MP_Server"}
+---@type SOTOGameMode
 SOTOUtility.GameMode = {
     SP = "SP",
     MP_CLIENT = "MP_Client",
