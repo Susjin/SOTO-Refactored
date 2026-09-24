@@ -22,7 +22,7 @@ local pairs = pairs
 ---Runs to change the specific stats of a equipped weapon
 ---@param player IsoPlayer
 ---@param args table
-function SOTOServerCommands.WeaponModifier(player, args)
+function SOTOServerCommands.weaponModifier(player, args)
     SOTOWeaponModifier.main(player)
 end
 

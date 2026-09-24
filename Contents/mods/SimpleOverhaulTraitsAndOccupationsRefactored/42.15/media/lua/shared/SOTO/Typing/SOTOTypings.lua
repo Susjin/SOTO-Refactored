@@ -1,7 +1,8 @@
 ----------------------------------------------------------------------------------------------
 --- SOTO-Refactored
---- @author: peteR_pg
+--- @author: peteR_pg, hea
 --- Steam profile: https://steamcommunity.com/id/peter_pg/
+--- Steam profile: https://steamcommunity.com/id/heafoxyz/
 --- GitHub Repository: https://github.com/Susjin/SOTO-Refactored
 
 --- This file exists only to declare classes and aliases

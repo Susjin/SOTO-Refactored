@@ -1,7 +1,8 @@
 ----------------------------------------------------------------------------------------------
 --- SOTO-Refactored
---- @author: peteR_pg
+--- @author: peteR_pg, hea
 --- Steam profile: https://steamcommunity.com/id/peter_pg/
+--- Steam profile: https://steamcommunity.com/id/heafoxyz/
 --- GitHub Repository: https://github.com/Susjin/SOTO-Refactored
 
 --- Main file with all functions related to PLACEHOLDER
@@ -31,7 +32,7 @@ function SOTOWeaponModifierClient.changePlayerWeaponStats(playerNumOrCharacter, 
     if gamemode == SOTOUtility.GameMode.SP then
         SOTOWeaponModifier.main(player, weapon)
     elseif gamemode == SOTOUtility.GameMode.MP_CLIENT then
-        sendClientCommand(player, "SOTO", "WeaponModifier", {})
+        sendClientCommand(player, "SOTO", "weaponModifier", {})
     end
 end
 
