@@ -486,7 +486,14 @@ end
 ---@param perk PerkFactory.Perk
 ---@param perkLevel integer
 function SOTOTraits.ByLevel.Maintenance(player, perk, perkLevel)
-
+    --Give Tinkerer if Maintenance level is 6+
+    if SOTOSandbox.CombatTraitsObtainable == true and perkLevel >= 6 and not player:hasTrait(CharacterTrait.TINKERER) then
+        local traitName = getText("UI_trait_tinkerer")
+        player:getCharacterTraits():add(CharacterTrait.TINKERER);
+        SOTOTraits.addXPBoost(player, Perks.Maintenance, 1);
+        HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
+        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+    end
 end
 
 ---Executed when a player gets a level up on SmallBlade
@@ -494,7 +501,14 @@ end
 ---@param perk PerkFactory.Perk
 ---@param perkLevel integer
 function SOTOTraits.ByLevel.SmallBlade(player, perk, perkLevel)
-
+    --Give Knifer if Short Blade level is 6+
+    if SOTOSandbox.CombatTraitsObtainable == true and perkLevel >= 6 and not player:hasTrait(SOTO.CharacterTrait.KNIFER) then
+        local traitName = getText("UI_trait_knifer")
+        player:getCharacterTraits():add(SOTO.CharacterTrait.KNIFER);
+        SOTOTraits.addXPBoost(player, Perks.SmallBlade, 1);
+        HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
+        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+    end
 end
 
 ---Executed when a player gets a level up on SmallBlunt
@@ -502,7 +516,14 @@ end
 ---@param perk PerkFactory.Perk
 ---@param perkLevel integer
 function SOTOTraits.ByLevel.SmallBlunt(player, perk, perkLevel)
-
+    --Give Bludgeoner if Short Blunt level is 6+
+    if SOTOSandbox.CombatTraitsObtainable == true and perkLevel >= 6 and not player:hasTrait(SOTO.CharacterTrait.BLUDGEONER) then
+        local traitName = getText("UI_trait_bludgeoner")
+        player:getCharacterTraits():add(SOTO.CharacterTrait.BLUDGEONER);
+        SOTOTraits.addXPBoost(player, Perks.SmallBlunt, 1);
+        HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
+        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+    end
 end
 
 ---Executed when a player gets a level up on Axe
@@ -510,7 +531,14 @@ end
 ---@param perk PerkFactory.Perk
 ---@param perkLevel integer
 function SOTOTraits.ByLevel.Axe(player, perk, perkLevel)
-
+    --Give Cutter if Axe level is 6+
+    if SOTOSandbox.CombatTraitsObtainable == true and perkLevel >= 6 and not player:hasTrait(SOTO.CharacterTrait.CUTTER) then
+        local traitName = getText("UI_trait_cutter")
+        player:getCharacterTraits():add(SOTO.CharacterTrait.CUTTER);
+        SOTOTraits.addXPBoost(player, Perks.Axe, 1);
+        HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
+        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+    end
 end
 
 ---Executed when a player gets a level up on Spear
@@ -518,7 +546,14 @@ end
 ---@param perk PerkFactory.Perk
 ---@param perkLevel integer
 function SOTOTraits.ByLevel.Spear(player, perk, perkLevel)
-
+    --Give Spearman if Spears level is 6+
+    if SOTOSandbox.CombatTraitsObtainable == true and perkLevel >= 6 and not player:hasTrait(SOTO.CharacterTrait.SPEARMAN) then
+        local traitName = getText("UI_trait_spearman")
+        player:getCharacterTraits():add(SOTO.CharacterTrait.SPEARMAN);
+        SOTOTraits.addXPBoost(player, Perks.Spear, 1);
+        HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
+        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+    end
 end
 
 ---Executed when a player gets a level up on LongBlade
@@ -526,7 +561,14 @@ end
 ---@param perk PerkFactory.Perk
 ---@param perkLevel integer
 function SOTOTraits.ByLevel.LongBlade(player, perk, perkLevel)
-
+    --Give Swordsman if Long Blade level is 6+
+    if SOTOSandbox.CombatTraitsObtainable == true and perkLevel >= 6 and not player:hasTrait(SOTO.CharacterTrait.SWORDSMAN) then
+        local traitName = getText("UI_trait_swordsman")
+        player:getCharacterTraits():add(SOTO.CharacterTrait.SWORDSMAN);
+        SOTOTraits.addXPBoost(player, Perks.LongBlade, 1);
+        HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
+        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+    end
 end
 
 ---Executed when a player gets a level up on Blunt
@@ -534,7 +576,14 @@ end
 ---@param perk PerkFactory.Perk
 ---@param perkLevel integer
 function SOTOTraits.ByLevel.Blunt(player, perk, perkLevel)
-
+    --Give Baseball Player if Long Blunt level is 6+
+    if SOTOSandbox.CombatTraitsObtainable == true and perkLevel >= 6 and not player:hasTrait(CharacterTrait.BASEBALL_PLAYER) then
+        local traitName = getText("UI_trait_PlaysBaseball")
+        player:getCharacterTraits():add(CharacterTrait.BASEBALL_PLAYER);
+        SOTOTraits.addXPBoost(player, Perks.Blunt, 1);
+        HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
+        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+    end
 end
 
 -- ----------------------- Ranged Combat Skill Functions ----------------------- --
