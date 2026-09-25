@@ -37,7 +37,7 @@ end
 ---@param perkLevel integer
 function SOTOTraits.Strength(player, perk, perkLevel)
     --Lose Slack if Strength and Fitness are level 7+
-    if perkLevel >= 7 and player:getPerkLevel(Perks.Fitness) >= 7 and player:hasTrait(SOTO.CharacterTrait.SLACK) then
+    if perkLevel >= 7 and player:getPerkLevel(Perks.Fitness) >= 5 and player:hasTrait(SOTO.CharacterTrait.SLACK) then
         local traitName = getText("UI_trait_slack")
         player:getCharacterTraits():remove(SOTO.CharacterTrait.SLACK);
         HaloTextHelper.addTextWithArrow(player, traitName, false, HaloTextHelper.getColorGreen());
@@ -51,7 +51,7 @@ end
 ---@param perkLevel integer
 function SOTOTraits.Fitness(player, perk, perkLevel)
     --Lose Slack if Strength and Fitness are level 7+
-    if perkLevel >= 7 and player:getPerkLevel(Perks.Strength) >= 7 and player:hasTrait(SOTO.CharacterTrait.SLACK) then
+    if perkLevel >= 7 and player:getPerkLevel(Perks.Strength) >= 5 and player:hasTrait(SOTO.CharacterTrait.SLACK) then
         local traitName = getText("UI_trait_slack")
         player:getCharacterTraits():remove(SOTO.CharacterTrait.SLACK);
         HaloTextHelper.addTextWithArrow(player, traitName, false, HaloTextHelper.getColorGreen());
@@ -82,14 +82,14 @@ function SOTOTraits.Sneak(player, perk, perkLevel)
         change = "Gave " .. traitName
     end
     --Give Inconspicuous if Sneak level is 6+ and don't have Conspicuous
-    if SOTOSandbox.InconspicuousEarnable == true and perkLevel == 6 and not player:hasTrait(CharacterTrait.CONSPICUOUS) and not player:hasTrait(CharacterTrait.INCONSPICUOUS) then
+    if SOTOSandbox.InconspicuousEarnable == true and perkLevel >= 6 and not player:hasTrait(CharacterTrait.CONSPICUOUS) and not player:hasTrait(CharacterTrait.INCONSPICUOUS) then
         traitName = getText("UI_trait_Inconspicuous")
         characterTraits:add(CharacterTrait.INCONSPICUOUS);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
         change = "Gave " .. traitName
     end
     --Lose Conspicuous if Sneak level is 7+
-    if SOTOSandbox.ConspicuousRemovable == true and perkLevel == 7 and player:hasTrait(CharacterTrait.CONSPICUOUS) then
+    if SOTOSandbox.ConspicuousRemovable == true and perkLevel >= 7 and player:hasTrait(CharacterTrait.CONSPICUOUS) then
         traitName = getText("UI_trait_Conspicuous")
         characterTraits:remove(CharacterTrait.CONSPICUOUS);
         HaloTextHelper.addTextWithArrow(player, traitName, false, HaloTextHelper.getColorGreen());
@@ -104,7 +104,7 @@ end
 ---@param perkLevel integer
 function SOTOTraits.Lightfoot(player, perk, perkLevel)
     local characterTraits, change, traitName = player:getCharacterTraits(), "Did nothing", ""
-    --Give Lightfooted if Lightfoot level is 4+ and don't have Clumsy
+    --Give Lightfooted if Lightfooted level is 4+ and don't have Clumsy
     if SOTOSandbox.AgilityTraitsObtainable == true and perkLevel >= 4 and not player:hasTrait(SOTO.CharacterTrait.LIGHTFOOTED) and not player:hasTrait(CharacterTrait.CLUMSY) then
         traitName = getText("UI_trait_lightfooted")
         characterTraits:add(SOTO.CharacterTrait.LIGHTFOOTED);
@@ -112,7 +112,7 @@ function SOTOTraits.Lightfoot(player, perk, perkLevel)
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
         change = "Gave " .. traitName
     end
-    --Give Lightfooted if Lightfoot level is 5+ and have Clumsy
+    --Give Lightfooted if Lightfooted level is 5+ and have Clumsy
     if SOTOSandbox.AgilityTraitsObtainable == true and perkLevel >= 5 and not player:hasTrait(SOTO.CharacterTrait.LIGHTFOOTED) and player:hasTrait(CharacterTrait.CLUMSY) then
         traitName = getText("UI_trait_lightfooted")
         characterTraits:add(SOTO.CharacterTrait.LIGHTFOOTED);
@@ -120,15 +120,15 @@ function SOTOTraits.Lightfoot(player, perk, perkLevel)
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
         change = "Gave " .. traitName
     end
-    --Give Graceful if Lightfoot level is 6+ and don't have Clumsy
-    if SOTOSandbox.GracefulEarnable == true and perkLevel == 6 and not player:hasTrait(CharacterTrait.CLUMSY) and not player:hasTrait(CharacterTrait.GRACEFUL) then
+    --Give Graceful if Lightfooted level is 6+ and don't have Clumsy
+    if SOTOSandbox.GracefulEarnable == true and perkLevel >= 6 and not player:hasTrait(CharacterTrait.CLUMSY) and not player:hasTrait(CharacterTrait.GRACEFUL) then
         traitName = getText("UI_trait_graceful")
         characterTraits:add(CharacterTrait.GRACEFUL);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
         change = "Gave " .. traitName
     end
-    --Lose Clumsy if Lightfoot level is 7
-    if SOTOSandbox.ClumsyRemovable == true and perkLevel == 7 and player:hasTrait(CharacterTrait.CLUMSY) then
+    --Lose Clumsy if Lightfooted level is 7+
+    if SOTOSandbox.ClumsyRemovable == true and perkLevel >= 7 and player:hasTrait(CharacterTrait.CLUMSY) then
         traitName = getText("UI_trait_clumsy")
         characterTraits:remove(CharacterTrait.CLUMSY);
         HaloTextHelper.addTextWithArrow(player, traitName, false, HaloTextHelper.getColorGreen());

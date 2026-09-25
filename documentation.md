@@ -6,6 +6,7 @@ Here are listed all the changes and additions this mod does to traits and occupa
 ## Changes applied to vanilla
 
 ### Occupations
+
 #### Burglar
 - Increased remaining points: -6 >> 0
 - Changed skill levels:
@@ -160,6 +161,7 @@ Here are listed all the changes and additions this mod does to traits and occupa
 ---
 
 ### Traits
+
 #### Positive
 
 ##### Artisan
@@ -382,7 +384,7 @@ Here are listed all the changes and additions this mod does to traits and occupa
 
 ---
 
-## Changes applied to default SOTO
+## Changes applied to SOTO
 
 ### Occupations
 
@@ -448,6 +450,7 @@ Here are listed all the changes and additions this mod does to traits and occupa
 
 
 ### Traits
+
 #### Positive
 
 ##### Desensitized
@@ -492,3 +495,15 @@ Here are listed all the changes and additions this mod does to traits and occupa
 
 ##### Sensitive Digestion
 - Increased points given: 2 >> 3
+
+### Traits gained/loosed by level
+
+#### Slack
+- Now is lost when gaining Fitness or Strength 7+, and the other is at least 5+
+  - eg. Fitness 7 and Strength 5 => You loose Slack
+
+#### Conspicuous
+- Now is only lost when reaching Sneaking level 7+
+
+#### Clumsy
+- Now is only lost when reaching Lightfooted level 7+
