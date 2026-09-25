@@ -496,7 +496,15 @@ Here are listed all the changes and additions this mod does to traits and occupa
 ##### Sensitive Digestion
 - Increased points given: 2 ⇒ 3
 
-### Traits gained/loosed by level
+### Traits gained by level
+
+#### Sharpshooter
+- Now is only gained at higher Aiming levels:
+  - If Eagle Eyed: 5 ⇒ 7
+  - If not Eagle Eyed and not Short Sighted: 6 ⇒ 8
+  - If Short Sighted: 7 ⇒ 9
+
+### Traits lost by level
 
 #### Slack
 - Now is lost when gaining Fitness or Strength 7+, and the other is at least 5+

@@ -25,6 +25,7 @@ local SOTOUtility = require("SOTO/SOTOUtility")
 --Pulling global to local for performance
 local SOTO = SOTO
 local SOTOSandbox = SandboxVars.SOTO
+local HaloTextHelper = HaloTextHelper
 
 --Setting up locals
 local gamemode = SOTOUtility.getGameMode()
@@ -593,7 +594,62 @@ end
 ---@param perk PerkFactory.Perk
 ---@param perkLevel integer
 function SOTOTraits.ByLevel.Aiming(player, perk, perkLevel)
+    local characterTraits, traitNameShooter, traitNameSharp, shooter, sharp = player:getCharacterTraits(), getText("UI_trait_shooter"), getText("UI_trait_expshooter"), false, false
+    --Give Shooter if Aiming level is 5+, don't have Sharpshooter and have Eagle Eyed
+    if SOTOSandbox.FirearmTraitsObtainable == true and perkLevel == 5 and player:hasTrait(CharacterTrait.EAGLE_EYED) and not player:hasTrait(SOTO.CharacterTrait.EXP_SHOOTER) and not player:hasTrait(SOTO.CharacterTrait.SHOOTER) then
+        characterTraits:add(SOTO.CharacterTrait.SHOOTER);
+        SOTOTraits.addXPBoost(player, perk, 1);
+        SOTOTraits.addXPBoost(player, Perks.Reloading, 1);
+        HaloTextHelper.addTextWithArrow(player, traitNameShooter, true, HaloTextHelper.getColorGreen());
+        shooter = true
+    end
+    --Give Shooter if Aiming level is 6+ and don't have Short Sighted, Eagle Eyed and Sharpshooter
+    if SOTOSandbox.FirearmTraitsObtainable == true and perkLevel == 6 and not player:hasTrait(CharacterTrait.SHORT_SIGHTED) and not player:hasTrait(CharacterTrait.EAGLE_EYED) and not player:hasTrait(SOTO.CharacterTrait.EXP_SHOOTER) and not player:hasTrait(SOTO.CharacterTrait.SHOOTER) then
+        characterTraits:add(SOTO.CharacterTrait.SHOOTER);
+        SOTOTraits.addXPBoost(player, perk, 1);
+        SOTOTraits.addXPBoost(player, Perks.Reloading, 1);
+        HaloTextHelper.addTextWithArrow(player, traitNameShooter, true, HaloTextHelper.getColorGreen());
+        shooter = true
+    end
+    --Give Shooter if Aiming level is 7+, don't have Sharpshooter and have Short Sighted
+    if SOTOSandbox.FirearmTraitsObtainable == true and perkLevel == 7 and player:hasTrait(CharacterTrait.SHORT_SIGHTED) and not player:hasTrait(SOTO.CharacterTrait.EXP_SHOOTER) and not player:hasTrait(SOTO.CharacterTrait.SHOOTER) then
+        characterTraits:add(SOTO.CharacterTrait.SHOOTER);
+        SOTOTraits.addXPBoost(player, perk, 1);
+        SOTOTraits.addXPBoost(player, Perks.Reloading, 1)
+        HaloTextHelper.addTextWithArrow(player, traitNameShooter, true, HaloTextHelper.getColorGreen())
+        shooter = true
+    end
 
+    --Give Sharpshooter if Aiming level is 7+, have Eagle Eyed and Shooter
+    if SOTOSandbox.FirearmTraitsObtainable == true and perkLevel == 7 and player:hasTrait(CharacterTrait.EAGLE_EYED) and player:hasTrait(SOTO.CharacterTrait.SHOOTER) and not player:hasTrait(SOTO.CharacterTrait.EXP_SHOOTER)then
+        characterTraits:add(SOTO.CharacterTrait.EXP_SHOOTER);
+        characterTraits:remove(SOTO.CharacterTrait.SHOOTER);
+        SOTOTraits.addXPBoost(player, perk, 1);
+        SOTOTraits.addXPBoost(player, Perks.Reloading, 1);
+        HaloTextHelper.addTextWithArrow(player, traitNameSharp, true, HaloTextHelper.getColorGreen());
+        sharp = true
+    end
+    --Give Sharpshooter if Aiming level is 8+, have Shooter and don't have Short Sighted and Eagle Eyed
+    if SOTOSandbox.FirearmTraitsObtainable == true and perkLevel == 8 and not player:hasTrait(CharacterTrait.SHORT_SIGHTED) and not player:hasTrait(CharacterTrait.EAGLE_EYED) and player:hasTrait(SOTO.CharacterTrait.SHOOTER) and not player:hasTrait(SOTO.CharacterTrait.EXP_SHOOTER)then
+        characterTraits:add(SOTO.CharacterTrait.EXP_SHOOTER);
+        characterTraits:remove(SOTO.CharacterTrait.SHOOTER);
+        SOTOTraits.addXPBoost(player, perk, 1);
+        SOTOTraits.addXPBoost(player, Perks.Reloading, 1);
+        HaloTextHelper.addTextWithArrow(player, traitNameSharp, true, HaloTextHelper.getColorGreen());
+        sharp = true
+    end
+    --Give Sharpshooter if Aiming level is 9+, have Short Sighted and Shooter
+    if SOTOSandbox.FirearmTraitsObtainable == true and perkLevel == 9 and player:hasTrait(CharacterTrait.SHORT_SIGHTED) and player:hasTrait(SOTO.CharacterTrait.SHOOTER) and not player:hasTrait(SOTO.CharacterTrait.EXP_SHOOTER)then
+        characterTraits:add(SOTO.CharacterTrait.EXP_SHOOTER);
+        characterTraits:remove(SOTO.CharacterTrait.SHOOTER);
+        SOTOTraits.addXPBoost(player, perk, 1);
+        SOTOTraits.addXPBoost(player, Perks.Reloading, 1);
+        HaloTextHelper.addTextWithArrow(player, traitNameSharp, true, HaloTextHelper.getColorGreen());
+        sharp = true
+    end
+    if sharp or shooter then
+        SOTOTraits.logDebug("Added" .. shooter and traitNameShooter or traitNameSharp, player:getDisplayName(), perk:getType(), "ByLevel")
+    end
 end
 
 
