@@ -52,7 +52,7 @@ function SOTOTraits.ByLevel.Strength(player, perk, perkLevel)
         local traitName = getText("UI_trait_slack")
         player:getCharacterTraits():remove(SOTO.CharacterTrait.SLACK);
         HaloTextHelper.addTextWithArrow(player, traitName, false, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Removed " .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Removed " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -66,7 +66,7 @@ function SOTOTraits.ByLevel.Fitness(player, perk, perkLevel)
         local traitName = getText("UI_trait_slack")
         player:getCharacterTraits():remove(SOTO.CharacterTrait.SLACK);
         HaloTextHelper.addTextWithArrow(player, traitName, false, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Removed " .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Removed " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -106,7 +106,7 @@ function SOTOTraits.ByLevel.Sneak(player, perk, perkLevel)
         HaloTextHelper.addTextWithArrow(player, traitName, false, HaloTextHelper.getColorGreen());
         change = "Removed " .. traitName
     end
-    SOTOTraits.logDebug(change, player:getDisplayName(), perk:getType(), "ByLevel")
+    SOTOTraits.logDebug(change, player:getDisplayName(), perk:getId(), "ByLevel")
 end
 
 ---Executed when a player gets a level up on Lightfoot
@@ -145,7 +145,7 @@ function SOTOTraits.ByLevel.Lightfoot(player, perk, perkLevel)
         HaloTextHelper.addTextWithArrow(player, traitName, false, HaloTextHelper.getColorGreen());
         change = "Removed " .. traitName
     end
-    SOTOTraits.logDebug(change, player:getDisplayName(), perk:getType(), "ByLevel")
+    SOTOTraits.logDebug(change, player:getDisplayName(), perk:getId(), "ByLevel")
 end
 
 ---Executed when a player gets a level up on Sprinting
@@ -159,7 +159,7 @@ function SOTOTraits.ByLevel.Sprinting(player, perk, perkLevel)
         player:getCharacterTraits():add(CharacterTrait.JOGGER);
         SOTOTraits.addXPBoost(player, perk, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -174,7 +174,7 @@ function SOTOTraits.ByLevel.Nimble(player, perk, perkLevel)
         player:getCharacterTraits():add(SOTO.CharacterTrait.AGILE);
         SOTOTraits.addXPBoost(player, perk, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -191,7 +191,7 @@ function SOTOTraits.ByLevel.PlantScavenging(player, perk, perkLevel)
         player:getCharacterTraits():add(SOTO.CharacterTrait.FORAGER);
         SOTOTraits.addXPBoost(player, perk, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -206,7 +206,7 @@ function SOTOTraits.ByLevel.Fishing(player, perk, perkLevel)
         player:getCharacterTraits():add(CharacterTrait.FISHING);
         SOTOTraits.addXPBoost(player, perk, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -221,7 +221,7 @@ function SOTOTraits.ByLevel.Trapping(player, perk, perkLevel)
         player:getCharacterTraits():add(SOTO.CharacterTrait.TRAPPER);
         SOTOTraits.addXPBoost(player, perk, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -236,7 +236,7 @@ function SOTOTraits.ByLevel.Tracking(player, perk, perkLevel)
         player:getCharacterTraits():add(SOTO.CharacterTrait.TRACKER);
         SOTOTraits.addXPBoost(player, perk, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -251,7 +251,7 @@ function SOTOTraits.ByLevel.Doctor(player, perk, perkLevel)
         player:getCharacterTraits():add(CharacterTrait.FIRST_AID);
         SOTOTraits.addXPBoost(player, perk, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -266,7 +266,7 @@ function SOTOTraits.ByLevel.Cooking(player, perk, perkLevel)
         player:getCharacterTraits():add(SOTO.CharacterTrait.CULINARY);
         SOTOTraits.addXPBoost(player, perk, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -281,7 +281,7 @@ function SOTOTraits.ByLevel.Farming(player, perk, perkLevel)
         player:getCharacterTraits():add(CharacterTrait.GARDENER);
         SOTOTraits.addXPBoost(player, perk, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -296,7 +296,7 @@ function SOTOTraits.ByLevel.Woodwork(player, perk, perkLevel)
         player:getCharacterTraits():add(SOTO.CharacterTrait.WOODWORKER);
         SOTOTraits.addXPBoost(player, perk, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -311,7 +311,7 @@ function SOTOTraits.ByLevel.Electricity(player, perk, perkLevel)
         player:getCharacterTraits():add(SOTO.CharacterTrait.ELECTRICALMECHANIC);
         SOTOTraits.addXPBoost(player, perk, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -326,7 +326,7 @@ function SOTOTraits.ByLevel.Mechanics(player, perk, perkLevel)
         player:getCharacterTraits():add(SOTO.CharacterTrait.AUTOMECHANIC);
         SOTOTraits.addXPBoost(player, perk, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -341,7 +341,7 @@ function SOTOTraits.ByLevel.MetalWelding(player, perk, perkLevel)
         player:getCharacterTraits():add(SOTO.CharacterTrait.METAL_WELDER);
         SOTOTraits.addXPBoost(player, perk, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -356,7 +356,7 @@ function SOTOTraits.ByLevel.Tailoring(player, perk, perkLevel)
         player:getCharacterTraits():add(CharacterTrait.TAILOR);
         SOTOTraits.addXPBoost(player, perk, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -371,7 +371,7 @@ function SOTOTraits.ByLevel.Carving(player, perk, perkLevel)
         player:getCharacterTraits():add(CharacterTrait.WHITTLER);
         SOTOTraits.addXPBoost(player, perk, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -386,7 +386,7 @@ function SOTOTraits.ByLevel.Masonry(player, perk, perkLevel)
         player:getCharacterTraits():add(CharacterTrait.MASON);
         SOTOTraits.addXPBoost(player, perk, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -401,7 +401,7 @@ function SOTOTraits.ByLevel.Pottery(player, perk, perkLevel)
         player:getCharacterTraits():add(SOTO.CharacterTrait.POTTER);
         SOTOTraits.addXPBoost(player, perk, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -416,7 +416,7 @@ function SOTOTraits.ByLevel.Glassmaking(player, perk, perkLevel)
         player:getCharacterTraits():add(SOTO.CharacterTrait.GLASSBLOWER);
         SOTOTraits.addXPBoost(player, perk, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -431,7 +431,7 @@ function SOTOTraits.ByLevel.Blacksmith(player, perk, perkLevel)
         player:getCharacterTraits():add(CharacterTrait.BLACKSMITH);
         SOTOTraits.addXPBoost(player, perk, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -446,7 +446,7 @@ function SOTOTraits.ByLevel.FlintKnapping(player, perk, perkLevel)
         player:getCharacterTraits():add(SOTO.CharacterTrait.KNAPPING_BASICS);
         SOTOTraits.addXPBoost(player, perk, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -461,7 +461,7 @@ function SOTOTraits.ByLevel.Husbandry(player, perk, perkLevel)
         player:getCharacterTraits():add(SOTO.CharacterTrait.ANIMAL_FRIEND);
         SOTOTraits.addXPBoost(player, perk, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -476,7 +476,7 @@ function SOTOTraits.ByLevel.Butchering(player, perk, perkLevel)
         player:getCharacterTraits():add(SOTO.CharacterTrait.SLAUGHTERER);
         SOTOTraits.addXPBoost(player, perk, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -493,7 +493,7 @@ function SOTOTraits.ByLevel.Maintenance(player, perk, perkLevel)
         player:getCharacterTraits():add(CharacterTrait.TINKERER);
         SOTOTraits.addXPBoost(player, Perks.Maintenance, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -508,7 +508,7 @@ function SOTOTraits.ByLevel.SmallBlade(player, perk, perkLevel)
         player:getCharacterTraits():add(SOTO.CharacterTrait.KNIFER);
         SOTOTraits.addXPBoost(player, Perks.SmallBlade, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -523,7 +523,7 @@ function SOTOTraits.ByLevel.SmallBlunt(player, perk, perkLevel)
         player:getCharacterTraits():add(SOTO.CharacterTrait.BLUDGEONER);
         SOTOTraits.addXPBoost(player, Perks.SmallBlunt, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -538,7 +538,7 @@ function SOTOTraits.ByLevel.Axe(player, perk, perkLevel)
         player:getCharacterTraits():add(SOTO.CharacterTrait.CUTTER);
         SOTOTraits.addXPBoost(player, Perks.Axe, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -553,7 +553,7 @@ function SOTOTraits.ByLevel.Spear(player, perk, perkLevel)
         player:getCharacterTraits():add(SOTO.CharacterTrait.SPEARMAN);
         SOTOTraits.addXPBoost(player, Perks.Spear, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -568,7 +568,7 @@ function SOTOTraits.ByLevel.LongBlade(player, perk, perkLevel)
         player:getCharacterTraits():add(SOTO.CharacterTrait.SWORDSMAN);
         SOTOTraits.addXPBoost(player, Perks.LongBlade, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -583,7 +583,7 @@ function SOTOTraits.ByLevel.Blunt(player, perk, perkLevel)
         player:getCharacterTraits():add(CharacterTrait.BASEBALL_PLAYER);
         SOTOTraits.addXPBoost(player, Perks.Blunt, 1);
         HaloTextHelper.addTextWithArrow(player, traitName, true, HaloTextHelper.getColorGreen());
-        SOTOTraits.logDebug("Added" .. traitName, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. traitName, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 
@@ -648,7 +648,7 @@ function SOTOTraits.ByLevel.Aiming(player, perk, perkLevel)
         sharp = true
     end
     if sharp or shooter then
-        SOTOTraits.logDebug("Added" .. shooter and traitNameShooter or traitNameSharp, player:getDisplayName(), perk:getType(), "ByLevel")
+        SOTOTraits.logDebug("Gave " .. shooter and traitNameShooter or traitNameSharp, player:getDisplayName(), perk:getId(), "ByLevel")
     end
 end
 

@@ -53,7 +53,7 @@ local function onClientCommand(module, command, player, args)
         else
             printArgs = string.format("%sNo arguments provided.", printArgs)
         end
-        SOTOUtility.logDebug(printArgs, "[onClientCommand]", SOTOUtility.getGameMode())
+        SOTOUtility.logDebug(printArgs, "onClientCommand", SOTOUtility.getGameMode())
         SOTOServerCommands[command](player, args)
     end
 end

@@ -22,11 +22,11 @@ local SOTOSandbox = SandboxVars.SOTO
 ---@param perk PerkFactory.Perk
 ---@param perkLevel number
 function SOTOTraitsByLevel.main(player, perk, perkLevel)
-    local perkType = perk:getType()
-    if SOTOTraits[perkType] then
-        SOTOTraits[perkType](player, perk, perkLevel)
+    local perkID = perk:getId()
+    if SOTOTraits.ByLevel[perkID] and type(SOTOTraits.ByLevel[perkID]) == "function" then
+        SOTOTraits.ByLevel[perkID](player, perk, perkLevel)
     else
-        SOTOUtility.logDebug(string.format("Function for perk %s not found", perkType), SOTOTraits.ByLevel.location, SOTOUtility.getGameMode())
+        SOTOUtility.logDebug(string.format("Function for perk %s not found", perkID), SOTOTraits.ByLevel.location, SOTOUtility.getGameMode())
     end
 end
 
