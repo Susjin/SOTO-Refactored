@@ -507,8 +507,7 @@ Here are listed all the changes and additions this mod does to traits and occupa
 ### Traits lost by level
 
 #### Slack
-- Now is lost when gaining Fitness or Strength 7+, and the other is at least 5+
-  - eg. Fitness 7 and Strength 5 ⇒ You loose Slack
+- Now is lost when having Fitness **AND** Strength 6+
 
 #### Conspicuous
 - Now is only lost when reaching Sneaking level 7+
