@@ -79,5 +79,7 @@
     "Sandbox_SOTO_GracefulEarnable": "Graceful trait can be earned:",
     "Sandbox_SOTO_ClumsyRemovable": "Clumsy trait can be removed:",
     "Sandbox_SOTO_InconspicuousEarnable": "Inconspicuous trait can be earned:",
-    "Sandbox_SOTO_ConspicuousRemovable": "Conspicuous trait can be removed:"
+    "Sandbox_SOTO_ConspicuousRemovable": "Conspicuous trait can be removed:",
+    "Sandbox_SOTO_EnableServerDebug": "Enable Server Debug:",
+    "Sandbox_SOTO_EnableServerDebug_tooltip": "When enabled, the server will log to the console everything related to SOTO for debugging purposes."
 }

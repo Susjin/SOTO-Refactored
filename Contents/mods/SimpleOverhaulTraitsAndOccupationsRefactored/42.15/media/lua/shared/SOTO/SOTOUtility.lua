@@ -13,6 +13,7 @@ local SOTOUtility = {}
 --Pulling global to local for performance
 local getDebug = getDebug()
 local pairs = pairs
+local SOTOSandbox = SandboxVars.SOTO
 
 ---@type SOTOGameMode
 SOTOUtility.GameMode = {
@@ -26,7 +27,7 @@ SOTOUtility.GameMode = {
 ---@param location string From what file|function it is
 ---@param gameMode string What gamemode is running on the client executed
 function SOTOUtility.logDebug(message, location, gameMode)
-    if getDebug or SOTOUtility.getGameMode() == SOTOUtility.GameMode["MP_SERVER"] then
+    if getDebug or (SOTOUtility.getGameMode() == SOTOUtility.GameMode["MP_SERVER"] and SOTOSandbox.EnableServerDebug) then
         print(string.format("SOTODebug[%s|%s]: %s", gameMode or "", location or "", message or ""))
     end
 end

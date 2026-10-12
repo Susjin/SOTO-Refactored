@@ -400,15 +400,10 @@ option SOTO.ConspicuousRemovable
 	translation = SOTO_ConspicuousRemovable,
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+option SOTO.EnableServerDebug
+{
+	type = boolean,
+	default = false,
+	page = SOTO,
+	translation = SOTO_EnableServerDebug,
+}
