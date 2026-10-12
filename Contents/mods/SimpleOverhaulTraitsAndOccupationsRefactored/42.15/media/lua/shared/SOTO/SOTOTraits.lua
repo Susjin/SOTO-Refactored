@@ -24,6 +24,7 @@ local SOTOUtility = require("SOTO/SOTOUtility")
 
 --Pulling global to local for performance
 local SOTO = SOTO
+---@type SOTOSandbox
 local SOTOSandbox = SandboxVars.SOTO
 local HaloTextHelper = HaloTextHelper
 

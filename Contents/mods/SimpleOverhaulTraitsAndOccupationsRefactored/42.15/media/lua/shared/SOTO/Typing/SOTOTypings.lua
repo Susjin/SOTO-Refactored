@@ -20,3 +20,6 @@
 ---@class TestingCommandArgs
 ---@field objectPos ObjectPosition
 ---@field args (string|number)[]
+
+---@class SOTOSandbox
+---@field EnableServerDebug boolean

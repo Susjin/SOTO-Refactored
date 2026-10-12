@@ -14,6 +14,7 @@ local SOTOUtility = require("SOTO/SOTOUtility")
 local SOTOTraits = require("SOTO/SOTOTraits")
 
 --Pulling global to local for performance
+---@type SOTOSandbox
 local SOTOSandbox = SandboxVars.SOTO
 
 

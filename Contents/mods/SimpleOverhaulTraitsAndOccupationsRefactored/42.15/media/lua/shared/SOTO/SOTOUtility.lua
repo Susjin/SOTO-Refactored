@@ -13,6 +13,7 @@ local SOTOUtility = {}
 --Pulling global to local for performance
 local getDebug = getDebug()
 local pairs = pairs
+---@type SOTOSandbox
 local SOTOSandbox = SandboxVars.SOTO
 
 ---@type SOTOGameMode
